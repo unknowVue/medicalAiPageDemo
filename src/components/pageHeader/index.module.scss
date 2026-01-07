@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .left {
+    .title {
+      font-size: 29px;
+      font-weight: bolder;
+    }
+    .subTitle {
+      color: #717981;
+    }
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    :global {
+      // .mantine-Button-label {
+      //   color: rgb(24, 24, 24);
+      // } 
+    }
+  }
+}

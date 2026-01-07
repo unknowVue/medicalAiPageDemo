@@ -1,0 +1,140 @@
+@use '@/styles/common.scss' as *;
+
+// .header {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   .left {
+//     .title {
+//       font-size: 29px;
+//       font-weight: bolder;
+//     }
+//     .subTitle {
+//       color: #717981;
+//     }
+//   }
+//   .right {
+//     :global {
+//       // .mantine-Button-label {
+//       //   color: rgb(24, 24, 24);
+//       // } 
+//     }
+//   }
+// }
+
+.divider {
+  margin-bottom: 15px;
+  height: 1px;
+  background-color: rgb(243, 243, 243);
+}
+
+.clear-search { 
+  display: flex;
+  column-gap: 15px;
+  align-items: center;
+  font-size: 14px;
+  color: rgb(108, 108, 108);
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    opacity: 0.7;
+  }
+  &:active {
+    transform: translateY(2px);
+  }
+}
+
+.current-filter {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  margin-top: 20px;
+  .current-filter-title {
+    color: #737981;
+    font-size: 14px;
+  }
+  .filter-label-list {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    :global {
+      .ant-tag-close-icon {
+        color: rgba(160, 68, 26, 0.903);
+        margin-left: 5px;
+        &:hover {
+          color: rgb(139, 51, 11);
+        }
+      }
+    }
+  }
+}
+
+.list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 1px;
+  box-shadow: 0px 2px #efefef;
+  .left {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    .list-title {
+      font-weight: bolder;
+      font-size: 17px;
+    }
+    .time-options-list {
+      display: flex;
+      align-items: center;
+      column-gap: 4px;
+      .time-option {
+        padding: 3px 9px;
+        border: 1px solid rgb(227, 227, 227);
+        border-radius: 5px;
+        font-size: 14px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05);
+        cursor: pointer;
+        transition: all 0.3s;
+        &:hover {
+          background-color: rgb(245, 245, 245);
+        }
+        &:active {
+          transform: translateY(2px);
+        }
+        &.active {
+          color: white;
+          background-color: #3662e3;
+        }
+      }
+    }
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    color: #8490a0;
+  }
+}
+
+.searchForm {
+  :global {
+    // 设置input的提示字体颜色]
+    .ant-input::placeholder, .ant-picker-input input::placeholder, .ant-picker-suffix {
+      color: #8d9dad;
+    }
+  }
+}
+
+.list-content {
+  padding: 20px 0px;
+  padding-top: 0px;
+  :global {
+    :where(.css-dev-only-do-not-override-xbngoj).ant-table-wrapper .ant-table-thead >tr>th {
+      background: #f9fafb;
+    }
+    .ant-pagination {
+      padding-right: 10px;
+    }
+  }
+}
