@@ -35,7 +35,7 @@ function ConditionalNavigate() {
 
 const routes: RouteObject[] = [
   {
-    path: '/',
+    path: '/medicalAiPageDemo',
     element: <Redirect />,
     children: [
       {
