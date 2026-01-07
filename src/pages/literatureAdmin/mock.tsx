@@ -350,22 +350,150 @@ export const literatureData = [
     title: 'Evaluating Drug Efficacy and Safety',
     content: (
       <>
-        <h3 style={{ color: 'rgb(55, 113, 237)', marginBottom: '15px' }}>Evaluating Drug Efficacy and Safety</h3>
-          <p style={{ color: 'rgba(54, 59, 71, 1)', marginTop: '15px' }}>
-            In the United States from 2011 to 2024, more than 29 million adverse drug reactions (ADRs) were reported through the FDA Adverse Events Reporting System (FAERS) (1) (see figure FAERS Adverse Events Reporting System). Approximately 3 to 6% of hospital admissions in the United States and 2.5 to 10.6% of admissions in Europe are due to ADRs (2). In low- and middle-income countries, approximately 134 million ADRs occur annually, resulting in 2.6 million deaths.
+        <div style={{ 
+      maxWidth: '900px', 
+      margin: '0 auto', 
+      padding: '32px', 
+      backgroundColor: 'white',
+      fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif'
+    }}>
+      {/* 标题和按钮区域 */}
+      <div style={{ 
+        display: 'flex', 
+        flexDirection: 'row', 
+        justifyContent: 'space-between', 
+        alignItems: 'flex-start',
+        marginBottom: '24px',
+        flexWrap: 'wrap'
+      }}>
+        <h1 style={{ 
+          fontSize: '28px', 
+          fontWeight: 'bold', 
+          color: '#1a202c', 
+          marginBottom: '16px',
+          lineHeight: '1.3',
+          flex: '1 1 auto'
+        }}>
+          Evaluating Drug Efficacy and Safety
+        </h1>
+        <button style={{ 
+          backgroundColor: '#b71c1c', 
+          color: 'white', 
+          padding: '8px 24px', 
+          borderRadius: '4px', 
+          fontWeight: '600', 
+          display: 'flex', 
+          alignItems: 'center',
+          justifyContent: 'center',
+          border: 'none',
+          cursor: 'pointer',
+          flex: '0 0 auto',
+          minWidth: '200px'
+        }}>
+          <i className="fas fa-clipboard-list" style={{ marginRight: '8px' }}></i>VIEW PATIENT EDUCATION
+        </button>
+      </div>
+
+      {/* 功能图标区域 */}
+      <div style={{ 
+        display: 'flex', 
+        marginBottom: '24px'
+      }}>
+        <span style={{ 
+          cursor: 'pointer', 
+          color: '#4a5568', 
+          marginRight: '16px'
+        }}>
+          <i className="fas fa-print" style={{ fontSize: '18px' }}></i>
+        </span>
+        <span style={{ 
+          cursor: 'pointer', 
+          color: '#4a5568', 
+          marginRight: '16px'
+        }}>
+          <i className="fas fa-volume-up" style={{ fontSize: '18px' }}></i>
+        </span>
+        <span style={{ 
+          cursor: 'pointer', 
+          color: '#4a5568'
+        }}>
+          <i className="fas fa-qrcode" style={{ fontSize: '18px' }}></i>
+        </span>
+      </div>
+
+      {/* 作者信息区域 */}
+      <div style={{ marginBottom: '32px', fontSize: '14px' }}>
+        <p style={{ marginBottom: '8px' }}>
+          By <span style={{ color: '#dc2626' }}>Shalini S. Lynch, PharmD</span>, University of California San Francisco School of Pharmacy
+        </p>
+        <p style={{ marginBottom: '8px' }}>
+          Reviewed By <span style={{ color: '#dc2626' }}>Eva M. Vivian, PharmD, MS, PhD</span>, University of Wisconsin School of Pharmacy
+        </p>
+        <p style={{ fontStyle: 'italic', color: '#718096' }}>
+          Reviewed/Revised Apr 2025
+        </p>
+      </div>
+
+      {/* 导航链接区域 */}
+      <div style={{ 
+        marginBottom: '24px', 
+        paddingBottom: '8px', 
+        borderBottom: '1px solid #e2e8f0',
+        overflowX: 'auto',
+        whiteSpace: 'nowrap'
+      }}>
+        <a href="#clinical-drug-trials" style={{ color: '#dc2626', fontWeight: 'bold' }}>Clinical Drug Trials</a> | 
+        <a href="#efficacy-effectiveness" style={{ color: '#4a5568', marginLeft: '8px', marginRight: '8px' }}>Efficacy and Effectiveness</a> | 
+        <a href="#placebos" style={{ color: '#4a5568', marginLeft: '8px', marginRight: '8px' }}>Placebos</a> | 
+        <a href="#drug-safety" style={{ color: '#4a5568', marginLeft: '8px' }}>Drug Safety</a>
+      </div>
+
+      {/* 介绍段落 */}
+      <p style={{ marginBottom: '16px', lineHeight: '1.6' }}>
+        A medication (or any medical treatment) should be used only when it will benefit a patient. Benefit takes into account both whether the medication produces the desired result (efficacy) and the type and likelihood of adverse effects (safety). Cost is commonly also balanced with benefit (see <span style={{ color: '#dc2626' }}>Economic Analyses in Clinical Decision Making</span>).
+      </p>
+
+      <p style={{ marginBottom: '32px', lineHeight: '1.6' }}>
+        When new drugs are developed, they are evaluated in clinical trials, which evaluate for efficacy and safety.
+      </p>
+
+      {/* Clinical Drug Trials 部分 */}
+      <div id="clinical-drug-trials" style={{ marginBottom: '32px' }}>
+        <div style={{ 
+          backgroundColor: '#0f4c81', 
+          color: 'white', 
+          padding: '12px 16px', 
+          marginBottom: '16px'
+        }}>
+          <h2 style={{ fontSize: '20px', fontWeight: 'bold' }}>Clinical Drug Trials</h2>
+        </div>
+        <div style={{ paddingLeft: '4px' }}>
+          <p style={{ marginBottom: '16px', lineHeight: '1.6' }}>
+            Promising compounds can be identified by mass screening of hundreds or thousands of molecules for biologic activity. In other cases, knowledge of the specific molecular pathophysiology of a target disease allows for rational drug design via computer modeling or modification of existing pharmaceutical agents.
           </p>
-          <p style={{ color: 'rgba(54, 59, 71, 1)', marginTop: '15px' }}>
-            All medications have the potential for adverse drug reactions (ADRs), and thus, the balance of benefits and risks should be considered whenever a medication is prescribed. ADRs can range from mild to severe. Serious adverse events are those that can cause disability, are life-threatening, result in hospitalization or death, or are congenital anomalies.
+          
+          <p style={{ marginBottom: '16px', lineHeight: '1.6' }}>
+            The safety of newly developed drugs is initially evaluated in vitro in preclinical research in human cell cultures or in animal models.
           </p>
-          <p style={{ color: 'rgba(54, 59, 71, 1)', marginTop: '15px' }}>
-            The commonly used term side effect is imprecise, often used to refer to the unintended effects of a medication that occur within the medication's therapeutic range.
+          
+          <p style={{ marginBottom: '16px', lineHeight: '1.6' }}>
+            Clinical research in humans to evaluate the safety and efficacy of new drugs involves clinical trials conducted in phases (see <span style={{ color: '#dc2626' }}>U.S. Food & Drug Administration: Clinical Research</span>):
           </p>
-          <p style={{ color: 'rgba(54, 59, 71, 1)', marginTop: '15px' }}>
-            ADRs can be considered to be a form of toxicity; however, toxicity is usually used to describe the effects of overingestion (accidental or intentional) of a drug or to elevated blood levels or enhanced drug effects that occur during appropriate use of a medication (eg, when drug metabolism is temporarily inhibited by a medical condition or another medication).
+          
+          <p style={{ marginBottom: '16px', lineHeight: '1.6' }}>
+            <span style={{ fontWeight: 'bold' }}>Phase 1</span> evaluates safety and dosage in humans. Varying amounts of the compound are given to a small number (often 20 to 100) of healthy volunteers to determine the dose at which toxicity first appears.
           </p>
-          <p style={{ color: 'rgba(54, 59, 71, 1)', marginTop: '15px' }}>
-            ADRs caused by drug hypersensitivity are not dose-related and require prior exposure. Allergies develop when a drug acts as an antigen or allergen. After a patient is sensitized, subsequent exposure to the drug produces one of several different types of allergic reaction. Clinical history and appropriate skin tests can sometimes help predict allergic ADRs.
+          
+          <p style={{ marginBottom: '16px', lineHeight: '1.6' }}>
+            <span style={{ fontWeight: 'bold' }}>Phase 2</span> evaluates efficacy in treating the target disease and side effects. The compound is given to a larger group of people (up to several hundred) for treatment of the target disease. An additional goal is to determine an optimal dose-response range.
           </p>
+          
+          <p style={{ marginBottom: '16px', lineHeight: '1.6' }}>
+            <span style={{ fontWeight: 'bold' }}>Phase 3</span> evaluates the drug's therapeutic effect in larger (often hundreds to thousands of people), more heterogeneous populations with the target disease and compares the drug with existing treatments, a placebo, or both. The purpose is to verify efficacy and detect adverse effects that may not have been observed during phases 1 and 2. This phase provides most of the safety data.
+          </p>
+        </div>
+      </div>
+    </div>
       </>
     )
   },
@@ -374,22 +502,161 @@ export const literatureData = [
     title: 'Adverse Drug Reactions',
     content: (
       <>
-        <h3 style={{ color: 'rgb(55, 113, 237)', marginBottom: '15px' }}>Adverse Drug Reactions</h3>
-          <p style={{ color: 'rgba(54, 59, 71, 1)', marginTop: '15px' }}>
-            Type I reactions (immediate hypersensitivity) are IgE-mediated. Antigen binds to IgE that is bound to tissue mast cells and blood basophils, triggering release of preformed mediators (eg, histamine, proteases, chemotactic factors) and synthesis of other mediators (eg, prostaglandins, leukotrienes, platelet-activating factor, cytokines). These mediators cause vasodilation, increased capillary permeability, mucus hypersecretion, smooth muscle spasm, and tissue infiltration with eosinophils, type 2 helper T (TH2) cells, and other inflammatory cells.
-          </p>
-          <p style={{ color: 'rgba(54, 59, 71, 1)', marginTop: '15px' }}>
-            Type II reactions (antibody-dependent cytotoxic hypersensitivity) result when antibody binds to cell surface antigens or to a molecule coupled to a cell surface. The surface-bound antigen-antibody structure (as opposed to the circulating antigen-antibody complex in type III hypersensitivity) activates cells that participate in antibody-dependent cell-mediated cytotoxicity (eg, natural killer cells, eosinophils, macrophages), complement, or both. The result is cell and tissue damage.
-          </p>
-          <p style={{ color: 'rgba(54, 59, 71, 1)', marginTop: '15px' }}>
-Disorders involving type II reactions include hyperacute graft rejection of an organ transplant, Coombs-positive hemolytic anemias, Hashimoto thyroiditis, and anti–glomerular basement membrane disease (eg, Goodpasture syndrome).
-          </p>
-          <p style={{ color: 'rgba(54, 59, 71, 1)', marginTop: '15px' }}>
-Type III reactions (immune complex disease) cause inflammation in response to circulating antigen-antibody immune complexes deposited in vessels or tissue. These complexes can activate the complement system or bind to and activate certain immune cells, resulting in release of inflammatory mediators.
-          </p>
-          <p style={{ color: 'rgba(54, 59, 71, 1)', marginTop: '15px' }}>
-Consequences of immune complex formation depend in part on the relative proportions of antigen and antibody in the immune complex. Early in the immune response, there is excess antigen with small antigen-antibody complexes, which do not activate complement. Later, when antigen and antibody are more balanced, immune complexes are larger and tend to be deposited in various tissues (eg, glomeruli, blood vessels), causing systemic reactions. The isotype of induced antibodies changes during an immune response, and the isotype, glycosylation, size, and charge of the complex’s components contribute to the clinical response.
-          </p>
+        <div style={{ 
+      maxWidth: '900px', 
+      margin: '0 auto', 
+      padding: '32px', 
+      backgroundColor: 'white',
+      fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif'
+    }}>
+      {/* 标题和按钮区域 */}
+      <div style={{ 
+        display: 'flex', 
+        flexDirection: 'row', 
+        justifyContent: 'space-between', 
+        alignItems: 'flex-start',
+        marginBottom: '24px',
+        flexWrap: 'wrap'
+      }}>
+        <h1 style={{ 
+          fontSize: '28px', 
+          fontWeight: 'bold', 
+          color: '#1a202c', 
+          marginBottom: '16px',
+          lineHeight: '1.3',
+          flex: '1 1 auto'
+        }}>
+          Adverse Drug Reactions
+        </h1>
+        <button style={{ 
+          backgroundColor: '#b71c1c', 
+          color: 'white', 
+          padding: '8px 24px', 
+          borderRadius: '4px', 
+          fontWeight: '600', 
+          display: 'flex', 
+          alignItems: 'center',
+          justifyContent: 'center',
+          border: 'none',
+          cursor: 'pointer',
+          flex: '0 0 auto',
+          minWidth: '200px'
+        }}>
+          <i className="fas fa-clipboard-list" style={{ marginRight: '8px' }}></i>VIEW PATIENT EDUCATION
+        </button>
+      </div>
+
+      {/* 副标题 */}
+      <div style={{ marginBottom: '24px' }}>
+        <h2 style={{ 
+          fontSize: '18px', 
+          fontWeight: 'normal', 
+          color: '#4a5568',
+          fontStyle: 'italic'
+        }}>
+          (Adverse Drug Effects, Medication Side Effects)
+        </h2>
+      </div>
+
+      {/* 功能图标区域 */}
+      <div style={{ 
+        display: 'flex', 
+        marginBottom: '24px'
+      }}>
+        <span style={{ 
+          cursor: 'pointer', 
+          color: '#4a5568', 
+          marginRight: '16px'
+        }}>
+          <i className="fas fa-print" style={{ fontSize: '18px' }}></i>
+        </span>
+        <span style={{ 
+          cursor: 'pointer', 
+          color: '#4a5568', 
+          marginRight: '16px'
+        }}>
+          <i className="fas fa-volume-up" style={{ fontSize: '18px' }}></i>
+        </span>
+        <span style={{ 
+          cursor: 'pointer', 
+          color: '#4a5568'
+        }}>
+          <i className="fas fa-qrcode" style={{ fontSize: '18px' }}></i>
+        </span>
+      </div>
+
+      {/* 作者信息区域 */}
+      <div style={{ marginBottom: '32px', fontSize: '14px' }}>
+        <p style={{ marginBottom: '8px' }}>
+          By <span style={{ color: '#dc2626' }}>Shalini S. Lynch, PharmD</span>, University of California San Francisco School of Pharmacy
+        </p>
+        <p style={{ marginBottom: '8px' }}>
+          Reviewed By <span style={{ color: '#dc2626' }}>Eva M. Vivian, PharmD, MS, PhD</span>, University of Wisconsin School of Pharmacy
+        </p>
+        <p style={{ fontStyle: 'italic', color: '#718096' }}>
+          Reviewed/Revised Apr 2025 | Modified May 2025
+        </p>
+      </div>
+
+      {/* 定义框 */}
+      <div style={{ 
+        backgroundColor: '#edf2f7', 
+        padding: '16px', 
+        marginBottom: '32px',
+        borderRadius: '4px'
+      }}>
+        <p style={{ lineHeight: '1.6' }}>
+          Adverse drug reaction (also called adverse drug effect) is a broad term referring to an unintended effect of a medication that is undesirable, unpleasant, or harmful.
+        </p>
+      </div>
+
+      {/* 导航链接区域 */}
+      <div style={{ 
+        marginBottom: '24px', 
+        paddingBottom: '8px', 
+        borderBottom: '1px solid #e2e8f0',
+        overflowX: 'auto',
+        whiteSpace: 'nowrap'
+      }}>
+        <a href="#classification" style={{ color: '#dc2626', fontWeight: 'bold' }}>Classification</a> | 
+        <a href="#risk-factors" style={{ color: '#4a5568', marginLeft: '8px', marginRight: '8px' }}>Risk Factors</a> | 
+        <a href="#symptoms" style={{ color: '#4a5568', marginLeft: '8px', marginRight: '8px' }}>Symptoms and Signs</a> | 
+        <a href="#diagnosis" style={{ color: '#4a5568', marginLeft: '8px', marginRight: '8px' }}>Diagnosis</a> | 
+        <a href="#treatment" style={{ color: '#4a5568', marginLeft: '8px', marginRight: '8px' }}>Treatment</a> | 
+        <a href="#prevention" style={{ color: '#4a5568', marginLeft: '8px', marginRight: '8px' }}>Prevention</a> | 
+        <a href="#multimedia" style={{ color: '#4a5568', marginLeft: '8px' }}>
+          <i className="fas fa-images" style={{ marginRight: '4px' }}></i>Multimedia
+        </a>
+      </div>
+
+      {/* 介绍段落 */}
+      <p style={{ marginBottom: '16px', lineHeight: '1.6' }}>
+        In the United States from 2011 to 2024, more than 29 million adverse drug reactions (ADRs) were reported through the 
+        <span style={{ color: '#dc2626' }}> FDA Adverse Events Reporting System (FAERS)</span> (1) (see figure FAERS Adverse Events Reporting System). 
+        Approximately 3 to 6% of hospital admissions in the United States and 2.5 to 10.6% of admissions in Europe are due to ADRs (2). 
+        In low- and middle-income countries, approximately 134 million ADRs occur annually, resulting in 2.6 million deaths.
+      </p>
+
+      <p style={{ marginBottom: '16px', lineHeight: '1.6' }}>
+        All medications have the potential for adverse drug reactions (ADRs), and thus, the balance of benefits and risks should be considered whenever a medication is prescribed. 
+        ADRs can range from mild to severe. Serious adverse events are those that can cause disability, are life-threatening, result in hospitalization or death, or are congenital anomalies.
+      </p>
+
+      <p style={{ marginBottom: '32px', lineHeight: '1.6' }}>
+        The commonly used term <span style={{ fontStyle: 'italic' }}>side effect</span> is imprecise, often used to refer to the unintended effects of a medication that occur within the medication's therapeutic range.
+      </p>
+
+      {/* References 部分 */}
+      <div style={{ marginBottom: '32px' }}>
+        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '16px' }}>References</h3>
+        <p style={{ fontSize: '14px', lineHeight: '1.6', marginBottom: '12px' }}>
+          1. FDA Adverse Event Reporting System (FAERS). Public Dashboard, Database and Questions and Answers on FDA's Adverse Event Reporting System (FAERS). Accessed March 4, 2025.
+        </p>
+        <p style={{ fontSize: '14px', lineHeight: '1.6' }}>
+          2. Chenchula S, Atal S, Uppugunduri CRS. A review of real-world evidence on preemptive pharmacogenomic testing for preventing adverse drug reactions: a reality for future health care. Pharmacogenomics J. 2024;24(2):9. Published 2024 Mar 15. doi:10.1038/s41397-024-00326-1
+        </p>
+      </div>
+    </div>
       </>
     )
   },
@@ -398,20 +665,140 @@ Consequences of immune complex formation depend in part on the relative proporti
     title: 'Medication Errors',
     content: (
       <>
-        <h3 style={{ color: 'rgb(55, 113, 237)', marginBottom: '15px' }}>Medication Errors</h3>
-          <div style={{ color: 'rgba(54, 59, 71, 1)' }}>
-            <p>ByShalini S. Lynch, PharmD, University of California San Francisco School of Pharmacy</p>
-            <p>Reviewed ByEva M. Vivian, PharmD, MS, PhD, University of Wisconsin School of Pharmacy</p>
-          </div>
-          <p style={{ color: 'rgba(54, 59, 71, 1)', marginTop: '15px' }}>
-            A medication error may or may not result in an adverse drug reaction. Errors in prescribing are common, especially for certain patient populations. Older adults, reproductive-age women, and children are particularly at risk.
-          </p>
-          <p style={{ color: 'rgba(54, 59, 71, 1)', marginTop: '15px' }}>
-            Medication errors contribute to morbidity and mortality. Globally, the annual cost associated with medication errors is estimated to be more than 40 billion USD (see World Health Organization: Medication Without Harm). In 2000, the United States Institute of Medicine published a report, To Err is Human: Building a Safer Health System, which revealed that there are more deaths from medication errors than workplace injury (1).
-          </p>
-          <p style={{ color: 'rgba(54, 59, 71, 1)', marginTop: '15px' }}>
-            Medication errors may involve:
-          </p>
+        <div style={{ 
+      maxWidth: '900px', 
+      margin: '0 auto', 
+      padding: '32px', 
+      backgroundColor: 'white',
+      fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif'
+    }}>
+      {/* 标题和按钮区域 */}
+      <div style={{ 
+        display: 'flex', 
+        flexDirection: 'row', 
+        justifyContent: 'space-between', 
+        alignItems: 'flex-start',
+        marginBottom: '24px',
+        flexWrap: 'wrap'
+      }}>
+        <h1 style={{ 
+          fontSize: '28px', 
+          fontWeight: 'bold', 
+          color: '#1a202c', 
+          marginBottom: '16px',
+          lineHeight: '1.3',
+          flex: '1 1 auto'
+        }}>
+          Medication Errors
+        </h1>
+        <button style={{ 
+          backgroundColor: '#b71c1c', 
+          color: 'white', 
+          padding: '8px 24px', 
+          borderRadius: '4px', 
+          fontWeight: '600', 
+          display: 'flex', 
+          alignItems: 'center',
+          justifyContent: 'center',
+          border: 'none',
+          cursor: 'pointer',
+          flex: '0 0 auto',
+          minWidth: '200px'
+        }}>
+          <i className="fas fa-clipboard-list" style={{ marginRight: '8px' }}></i>VIEW PATIENT EDUCATION
+        </button>
+      </div>
+
+      {/* 功能图标区域 */}
+      <div style={{ 
+        display: 'flex', 
+        marginBottom: '24px'
+      }}>
+        <span style={{ 
+          cursor: 'pointer', 
+          color: '#4a5568', 
+          marginRight: '16px'
+        }}>
+          <i className="fas fa-print" style={{ fontSize: '18px' }}></i>
+        </span>
+        <span style={{ 
+          cursor: 'pointer', 
+          color: '#4a5568', 
+          marginRight: '16px'
+        }}>
+          <i className="fas fa-volume-up" style={{ fontSize: '18px' }}></i>
+        </span>
+        <span style={{ 
+          cursor: 'pointer', 
+          color: '#4a5568'
+        }}>
+          <i className="fas fa-qrcode" style={{ fontSize: '18px' }}></i>
+        </span>
+      </div>
+
+      {/* 作者信息区域 */}
+      <div style={{ marginBottom: '32px', fontSize: '14px' }}>
+        <p style={{ marginBottom: '8px' }}>
+          By <span style={{ color: '#dc2626' }}>Shalini S. Lynch, PharmD</span>, University of California San Francisco School of Pharmacy
+        </p>
+        <p style={{ marginBottom: '8px' }}>
+          Reviewed By <span style={{ color: '#dc2626' }}>Eva M. Vivian, PharmD, MS, PhD</span>, University of Wisconsin School of Pharmacy
+        </p>
+        <p style={{ fontStyle: 'italic', color: '#718096' }}>
+          Reviewed/Revised Apr 2025
+        </p>
+      </div>
+
+      {/* 定义框 */}
+      <div style={{ 
+        backgroundColor: '#edf2f7', 
+        padding: '16px', 
+        marginBottom: '32px',
+        borderRadius: '4px'
+      }}>
+        <p style={{ lineHeight: '1.6' }}>
+          A medication error is any preventable event that may cause or lead to inappropriate medication use or patient harm while the medication is in the control of a health care professional, patient, or caregiver.
+        </p>
+      </div>
+
+      {/* 介绍段落 */}
+      <p style={{ marginBottom: '16px', lineHeight: '1.6' }}>
+        A medication error may or may not result in an adverse drug reaction. Errors in prescribing are common, especially for certain patient populations. Older adults, reproductive-age women, and children are particularly at risk.
+      </p>
+
+      <p style={{ marginBottom: '16px', lineHeight: '1.6' }}>
+        Medication errors contribute to morbidity and mortality. Globally, the annual cost associated with medication errors is estimated to be more than 40 billion USD (see <span style={{ color: '#dc2626' }}>World Health Organization: Medication Without Harm</span>). In 2000, the United States Institute of Medicine published a report, To Err is Human: Building a Safer Health System, which revealed that there are more deaths from medication errors than workplace injury (1).
+      </p>
+
+      <p style={{ marginBottom: '16px', lineHeight: '1.6' }}>
+        Medication errors may involve:
+      </p>
+
+      {/* 药物错误可能涉及的问题列表 */}
+      <ul style={{ marginBottom: '32px', paddingLeft: '24px', lineHeight: '1.6' }}>
+        <li style={{ marginBottom: '8px' }}>Wrong choice of a medication or a prescription for the wrong dose, frequency, or duration</li>
+        <li style={{ marginBottom: '8px' }}>Errors in reading the prescription by the pharmacist so that the wrong medication or dose is dispensed</li>
+        <li style={{ marginBottom: '8px' }}>Errors in reading the label of the drug container by the caregiver so that the wrong medication or dose is given</li>
+        <li style={{ marginBottom: '8px' }}>Incorrect instructions to the patient</li>
+        <li style={{ marginBottom: '8px' }}>Incorrect administration by a clinician, caregiver, or patient</li>
+        <li style={{ marginBottom: '8px' }}>Incorrect storage by the pharmacist or patient, altering the medication's potency</li>
+        <li style={{ marginBottom: '8px' }}>Use of an outdated drug, altering the potency</li>
+        <li style={{ marginBottom: '8px' }}>Inaccurate transmission of prescription information between clinicians</li>
+      </ul>
+
+      {/* Unclear prescriptions 部分 */}
+      <div style={{ marginBottom: '32px' }}>
+        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '16px', color: '#1a202c' }}>
+          Unclear prescriptions
+        </h2>
+        <p style={{ marginBottom: '16px', lineHeight: '1.6' }}>
+          Digital prescriptions must be entered into the computer ordering system correctly, and handwritten prescriptions must be written as clearly as possible. The names of some drugs are similar and, if not written clearly, cause confusion. In the United States, <span style={{ color: '#dc2626' }}>The Joint Commission</span> provides guidelines for abbreviations used in prescriptions and medical records. For example, "qd" (once a day) may be confused with "qid" (4 times a day). Writing "once daily" is preferred.
+        </p>
+        <p style={{ marginBottom: '16px', lineHeight: '1.6' }}>
+          Electronically transmitted or computer-printed prescriptions can avoid problems with illegible handwriting or inappropriate abbreviations. Electronic prescribing systems that use check boxes or pull-down lists may help direct prescribers to suitable dosages but also may increase the risk of inadvertently selecting the wrong drug or dose.
+        </p>
+      </div>
+    </div>
       </>
     )
   }
