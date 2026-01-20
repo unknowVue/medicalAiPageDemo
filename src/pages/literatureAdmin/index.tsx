@@ -4,14 +4,9 @@ import { IconSearch } from '@tabler/icons-react'
 import { Form, Input, Card as AntdCard, Table, type TableProps, type PaginationProps } from 'antd'
 import { QuestionCircleOutlined, RightOutlined, UpOutlined } from '@ant-design/icons'
 import { useEffect, useRef, useState } from 'react'
+import type { DataType } from './types'
 import PageHeader from '@/components/pageHeader'
 import { literatureData } from './mock'
-
-interface DataType {
-  id: number;
-  title: string;
-  content: React.ReactNode;
-}
 
 const columns: TableProps<DataType>['columns'] = [
   {

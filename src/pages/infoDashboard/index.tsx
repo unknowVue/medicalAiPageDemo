@@ -38,75 +38,6 @@ const initialSelectTimeOptions = [
   }
 ]
 
-const columns: TableProps<DataType>['columns'] = [
-  {
-    title() {
-      return (
-        <div style={{ color: 'rgb(114 124 139)' }}>标题</div>
-      )
-    },
-    dataIndex: 'title',
-    key: 'title',
-    render: (text) => <a style={{ fontWeight: 'bolder', color: 'rgb(87,139,255)' }}>{text}</a>,
-  },
-  {
-    title() {
-      return (
-        <div style={{ color: 'rgb(114 124 139)' }}>来源</div>
-      )
-    },
-    dataIndex: 'source',
-    key: 'source',
-    render: (text) => <span style={{ color: 'rgb(255 255 255)', background: 'rgb(50, 134, 244)', border: '1px', borderRadius: '10px', padding: '2px 8px' }}>{text}</span>,
-    filters:[
-      {
-        text: 'Avidity',
-        value: 'Avidity'
-      },
-      {
-        text: 'REGENERON',
-        value: 'REGENERON'
-      },
-      {
-        text: 'WAVE',
-        value: 'WAVE'
-      }
-    ],
-    onFilter: (value, record) => record.source.indexOf(value as string) === 0,
-  },
-  {
-    title() {
-      return (
-        <div style={{ color: 'rgb(114 124 139)' }}>分类</div>
-      )
-    },
-    dataIndex: 'classify',
-    key: 'classify',
-    render: (text) => <span style={{ color: 'rgb(0 0 0)', border: '1px solid rgb(220, 220, 220)', borderRadius: '10px', padding: '2px 8px' }}>{text}</span>,
-    filters:[
-      {
-        text: 'news',
-        value: 'news'
-      },
-      {
-        text: 'events',
-        value: 'events'
-      }
-    ],
-    onFilter: (value, record) => record.classify.indexOf(value as string) === 0,
-  },
-  {
-    title() {
-      return (
-        <div style={{ color: 'rgb(114 124 139)' }}>时间</div>
-      )
-    },
-    dataIndex: 'time',
-    key: 'time',
-    render: (text) => <span style={{ color: 'rgb(114 124 139)' }}>{text}</span>,
-  },
-];
-
 const data: DataType[] = [
   {
     id: 1,
@@ -257,6 +188,78 @@ export default function InfoDashboard() {
   const [currentTimeOption, setCurrentTimeOption] = useState<null | string>(null)
 
   const [tableData, setTableData] = useState<DataType[]>([])
+  const [tableFilters, setTableFilters] = useState<Record<string, (string | number)[] | null>>({})
+
+  const columns: TableProps<DataType>['columns'] = [
+  {
+    title() {
+      return (
+        <div style={{ color: 'rgb(114 124 139)' }}>标题</div>
+      )
+    },
+    dataIndex: 'title',
+    key: 'title',
+    render: (text) => <a style={{ fontWeight: 'bolder', color: 'rgb(87,139,255)' }}>{text}</a>,
+  },
+  {
+    title() {
+      return (
+        <div style={{ color: 'rgb(114 124 139)' }}>来源</div>
+      )
+    },
+    dataIndex: 'source',
+    key: 'source',
+    filteredValue: tableFilters.source || null,
+    render: (text) => <span style={{ color: 'rgb(255 255 255)', background: 'rgb(50, 134, 244)', border: '1px', borderRadius: '10px', padding: '2px 8px' }}>{text}</span>,
+    filters:[
+      {
+        text: 'Avidity',
+        value: 'Avidity'
+      },
+      {
+        text: 'REGENERON',
+        value: 'REGENERON'
+      },
+      {
+        text: 'WAVE',
+        value: 'WAVE'
+      }
+    ],
+    onFilter: (value, record) => record.source.indexOf(value as string) === 0,
+  },
+  {
+    title() {
+      return (
+        <div style={{ color: 'rgb(114 124 139)' }}>分类</div>
+      )
+    },
+    dataIndex: 'classify',
+    key: 'classify',
+    filteredValue: tableFilters.classify || null,
+    render: (text) => <span style={{ color: 'rgb(0 0 0)', border: '1px solid rgb(220, 220, 220)', borderRadius: '10px', padding: '2px 8px' }}>{text}</span>,
+    filters:[
+      {
+        text: 'news',
+        value: 'news'
+      },
+      {
+        text: 'events',
+        value: 'events'
+      }
+    ],
+    onFilter: (value, record) => record.classify.indexOf(value as string) === 0,
+  },
+  {
+    title() {
+      return (
+        <div style={{ color: 'rgb(114 124 139)' }}>时间</div>
+      )
+    },
+    dataIndex: 'time',
+    key: 'time',
+    render: (text) => <span style={{ color: 'rgb(114 124 139)' }}>{text}</span>,
+  },
+];
 
   const pagination = useRef<PaginationProps>({
     showQuickJumper: true,
@@ -364,13 +367,14 @@ const handleClickClearForm = () => {
   form.resetFields()
   pagination.current.current = 1
   setCurrentTimeOption(null)
-  
-  getTableList()
+  setTableFilters({});
+  getTableList({})
 }
 
-const handleColumsFilerChange = (pagination, filters, sorter, extra) => {
+const handleColumnsFilterChange = (pagination, filters, sorter, extra) => {
   console.log('表格外部筛选:', pagination, filters, sorter, extra);
 
+  setTableFilters(filters);
   getTableList(filters)
 }
 
@@ -489,7 +493,7 @@ const handleColumsFilerChange = (pagination, filters, sorter, extra) => {
               dataSource={tableData}
               pagination={pagination.current}
               rowClassName='table-row'
-              onChange={handleColumsFilerChange}
+              onChange={handleColumnsFilterChange}
               expandable={{
                 expandedRowRender: (record) => (
                   // 这里应该是一个无限展开，因为是不清楚多少层可以展开，应该是这样一个数据结构，只要children有值就需要展开
