@@ -52,6 +52,52 @@ const columns: TableProps<DataType>['columns'] = [
   {
     title() {
       return (
+        <div style={{ color: 'rgb(114 124 139)' }}>来源</div>
+      )
+    },
+    dataIndex: 'source',
+    key: 'source',
+    render: (text) => <span style={{ color: 'rgb(255 255 255)', background: 'rgb(50, 134, 244)', border: '1px', borderRadius: '10px', padding: '2px 8px' }}>{text}</span>,
+    filters:[
+      {
+        text: 'Avidity',
+        value: 'Avidity'
+      },
+      {
+        text: 'REGENERON',
+        value: 'REGENERON'
+      },
+      {
+        text: 'WAVE',
+        value: 'WAVE'
+      }
+    ],
+    onFilter: (value, record) => record.source.indexOf(value as string) === 0,
+  },
+  {
+    title() {
+      return (
+        <div style={{ color: 'rgb(114 124 139)' }}>分类</div>
+      )
+    },
+    dataIndex: 'classify',
+    key: 'classify',
+    render: (text) => <span style={{ color: 'rgb(0 0 0)', border: '1px solid rgb(220, 220, 220)', borderRadius: '10px', padding: '2px 8px' }}>{text}</span>,
+    filters:[
+      {
+        text: 'news',
+        value: 'news'
+      },
+      {
+        text: 'events',
+        value: 'events'
+      }
+    ],
+    onFilter: (value, record) => record.classify.indexOf(value as string) === 0,
+  },
+  {
+    title() {
+      return (
         <div style={{ color: 'rgb(114 124 139)' }}>时间</div>
       )
     },
@@ -87,91 +133,117 @@ const data: DataType[] = [
     // ],
     subTitleList: ['Introduction to the Cardiac Patient', 'Cardiovascular Examination', 'Cardiac Auscultation'],
     time: '2026-01-01',
-    describe: '内容'
+    describe: '内容',
+    source: 'Avidity',
+    classify: 'news'
   },
   {
     id: 2,
     title: 'Symptoms of Cardiovascular Disorders',
     subTitleList: ['Chest Pain', 'Edema', 'Limb Pain', 'Orthostatic Hypotension', 'Palpitations', 'Syncope'],
     time: '2026-01-02',
-    describe: '内容'
+    describe: '内容',
+    source: 'REGENERON',
+    classify: 'events'
   },
   {
     id: 3,
     title: 'Cardiovascular Tests and Procedures',
     subTitleList: ['Introduction to the Cardiac Patient', 'Cardiovascular Examination', 'Cardiac Auscultation'],
     time: '2025-01-03',
-    describe: '内容'
+    describe: '内容',
+    source: 'WAVE',
+    classify: 'events'
   },
   {
     id: 4,
     title: 'Overview of Arrhythmias and Conduction Disorders',
     subTitleList: ['Introduction to the Cardiac Patient', 'Cardiovascular Examination', 'Cardiac Auscultation'],
     time: '2025-01-01',
-    describe: '内容'
+    describe: '内容',
+    source: 'WAVE',
+    classify: 'events'
   },
   {
     id: 5,
     title: "Specific Cardiac Arrhythmias",
     subTitleList: ['Introduction to the Cardiac Patient', 'Cardiovascular Examination', 'Cardiac Auscultation'],
     time: '2025-12-10',
-    describe: '内容'
+    describe: '内容',
+    source: 'REGENERON',
+    classify: 'events'
   },
   {
     id: 6,
     title: 'Arrhythmogenic Cardiac Disorders',
     subTitleList: ['Introduction to the Cardiac Patient', 'Cardiovascular Examination', 'Cardiac Auscultation'],
     time: '2025-12-09',
-    describe: '内容'
+    describe: '内容',
+    source: 'WAVE',
+    classify: 'events'
   },
   {
     id: 7,
     title: "Arteriosclerosis",
     subTitleList: ['Introduction to the Cardiac Patient', 'Cardiovascular Examination', 'Cardiac Auscultation'],
     time: '2025-12-08',
-    describe: '内容'
+    describe: '内容',
+    source: 'Avidity',
+    classify: 'news'
   },
   {
     id: 8,
     title: "Cardiac Tumors",
     subTitleList: ['Introduction to the Cardiac Patient', 'Cardiovascular Examination', 'Cardiac Auscultation'],
     time: '2025-11-08',
-    describe: '内容'
+    describe: '内容',
+    source: 'REGENERON',
+    classify: 'events'
   },
   {
     id: 9,
     title: "Cardiomyopathies",
     subTitleList: ['Introduction to the Cardiac Patient', 'Cardiovascular Examination', 'Cardiac Auscultation'],
     time: '2026-01-01',
-    describe: '内容'
+    describe: '内容',
+    source: 'WAVE',
+    classify: 'events'
   },
   {
     id: 10,
     title: "Diseases of the Aorta and Its Branches",
     subTitleList: ['Introduction to the Cardiac Patient', 'Cardiovascular Examination', 'Cardiac Auscultation'],
     time: '2026-01-06',
-    describe: '内容'
+    describe: '内容',
+    source: 'Avidity',
+    classify: 'news'
   },
   {
     id: 11,
     title: "Myocarditis and Pericarditis",
     subTitleList: ['Introduction to the Cardiac Patient', 'Cardiovascular Examination', 'Cardiac Auscultation'],
     time: '2026-01-03',
-    describe: '内容'
+    describe: '内容',
+    source: 'REGENERON',
+    classify: 'events'
   },
   {
     id: 12,
     title: "Peripheral Artery Disorders",
     subTitleList: ['Introduction to the Cardiac Patient', 'Cardiovascular Examination', 'Cardiac Auscultation'],
     time: '2026-06-04',
-    describe: '内容'
+    describe: '内容',
+    source: 'WAVE',
+    classify: 'events'
   },
   {
     id: 13,
     title: "Peripheral Venous Disorders",
     subTitleList: ['Introduction to the Cardiac Patient', 'Cardiovascular Examination', 'Cardiac Auscultation'],
     time: '2026-01-04',
-    describe: '内容'
+    describe: '内容',
+    source: 'REGENERON',
+    classify: 'events'
   },
 ];
 
@@ -211,12 +283,28 @@ export default function InfoDashboard() {
     setCurrentTimeOption('')
   }
 
-  const getTableList = () => {
+  const getTableList = (filters?: Record<string, (string | number)[] | null>) => {
     const values = form.getFieldsValue()
     // 第一步：根据关键字去筛选
-    let res = []
+    let res = [...data]
     const w = form.getFieldValue('keyword') || ''
-    res = data.filter(item => item.title.toLowerCase().includes(w.toLowerCase()))
+    if (w) {
+    res = res.filter(item => 
+      item.title.toLowerCase().includes(w.toLowerCase()) ||
+      (item.source && item.source.toLowerCase().includes(w.toLowerCase())) ||
+      (item.classify && item.classify.toLowerCase().includes(w.toLowerCase()))
+    )
+  }
+
+  // 应用表格筛选器
+    if (filters && Object.keys(filters).length > 0) {
+      Object.entries(filters).forEach(([key, filterValues]) => {
+        if (filterValues && filterValues.length > 0) {
+          res = res.filter(item => filterValues.includes(item[key]))
+        }
+      })
+    }
+    // res = data.filter(item => item.title.toLowerCase().includes(w.toLowerCase()))
     // 第二步：根据时间去筛选
     let timeRanges: string[] = []
     if(values.timeRange) {
@@ -272,11 +360,19 @@ export default function InfoDashboard() {
     getTableList()
   }
 
-  const handleClickClearForm = () => {
-    form.resetFields()
-    pagination.current.current = 1
-    getTableList()
-  }
+const handleClickClearForm = () => {
+  form.resetFields()
+  pagination.current.current = 1
+  setCurrentTimeOption(null)
+  
+  getTableList()
+}
+
+const handleColumsFilerChange = (pagination, filters, sorter, extra) => {
+  console.log('表格外部筛选:', pagination, filters, sorter, extra);
+
+  getTableList(filters)
+}
 
   useEffect(() => {
     setCurrentTimeOption('week')
@@ -393,6 +489,7 @@ export default function InfoDashboard() {
               dataSource={tableData}
               pagination={pagination.current}
               rowClassName='table-row'
+              onChange={handleColumsFilerChange}
               expandable={{
                 expandedRowRender: (record) => (
                   // 这里应该是一个无限展开，因为是不清楚多少层可以展开，应该是这样一个数据结构，只要children有值就需要展开

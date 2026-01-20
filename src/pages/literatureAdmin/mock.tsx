@@ -801,5 +801,331 @@ export const literatureData = [
     </div>
       </>
     )
-  }
-]
+  },
+  {
+    id: 6,
+    title: 'Overview of Cancer',
+    content: (
+      <div style={{ 
+        maxWidth: '900px', 
+        margin: '0 auto', 
+        padding: '32px', 
+        backgroundColor: 'white',
+        fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif'
+      }}>
+        {/* 标题和按钮区域 */}
+        <div style={{ 
+          display: 'flex', 
+          justifyContent: 'space-between', 
+          alignItems: 'flex-start',
+          marginBottom: '24px'
+        }}>
+          <h1 style={{ 
+            fontSize: '28px', 
+            fontWeight: 'bold', 
+            color: '#1a202c', 
+            marginBottom: '16px',
+            lineHeight: '1.3'
+          }}>
+            Overview of Cancer
+          </h1>
+          <button style={{ 
+            backgroundColor: '#b71c1c', 
+            color: 'white', 
+            padding: '8px 24px', 
+            borderRadius: '4px', 
+            fontWeight: '600', 
+            display: 'flex', 
+            alignItems: 'center',
+            justifyContent: 'center',
+            border: 'none',
+            cursor: 'pointer'
+          }}>
+            <i className="fas fa-clipboard-list" style={{ marginRight: '8px' }}></i>VIEW PATIENT EDUCATION
+          </button>
+        </div>
+
+        {/* 功能图标区域 */}
+        <div style={{ 
+          display: 'flex', 
+          marginBottom: '24px'
+        }}>
+          <span style={{ 
+            cursor: 'pointer', 
+            color: '#4a5568', 
+            marginRight: '16px'
+          }}>
+            <i className="fas fa-print" style={{ fontSize: '18px' }}></i>
+          </span>
+          <span style={{ 
+            cursor: 'pointer', 
+            color: '#4a5568', 
+            marginRight: '16px'
+          }}>
+            <i className="fas fa-volume-up" style={{ fontSize: '18px' }}></i>
+          </span>
+          <span style={{ 
+            cursor: 'pointer', 
+            color: '#4a5568'
+          }}>
+            <i className="fas fa-qrcode" style={{ fontSize: '18px' }}></i>
+          </span>
+        </div>
+
+        {/* 作者信息区域 */}
+        <div style={{ marginBottom: '32px', fontSize: '14px' }}>
+          <p style={{ marginBottom: '8px' }}>
+            By <span style={{ color: '#dc2626' }}>Robert Peter Gale, MD, PhD, DSC(hc)</span>, Imperial College London
+          </p>
+          <p style={{ marginBottom: '8px' }}>
+            Reviewed By <span style={{ color: '#dc2626' }}>Ashkan Emadi, MD, PhD</span>, West Virginia University School of Medicine, Robert C. Byrd Health Sciences Center
+          </p>
+          <p style={{ fontStyle: 'italic', color: '#718096' }}>
+            Reviewed/Revised Sept 2024
+          </p>
+        </div>
+
+        {/* 正文内容 */}
+        <div style={{ lineHeight: '1.6', marginBottom: '32px' }}>
+          <p>
+            Cancer is an unregulated proliferation of cells. Its prominent properties are
+          </p>
+          <ul style={{ paddingLeft: '24px', marginBottom: '16px' }}>
+            <li>A lack of cell differentiation</li>
+            <li>Local invasion of adjoining tissue</li>
+            <li>Metastasis, which is spread to distant sites through the bloodstream or the lymphatic system (often)</li>
+          </ul>
+          <p>
+            The <span style={{ color: '#dc2626' }}>immune system</span> may play a role in eliminating early cancers or premalignant cells. This concept is termed immune surveillance. Patients with congenital or acquired immunodeficiency have an increased cancer risk, particularly cancers associated with viral infection such as lymphomas and Kaposi sarcoma <span style={{ color: '#dc2626' }}>(1, 2)</span>.
+          </p>
+          <p>
+            Many cancers are potentially curable, particularly if detected at an early stage, and long-term remission is often possible in those detected at later stages. There is controversy whether cancers detected at an early stage, such as breast cancers detected by screening mammography or prostate cancers detected by screening prostate-specific antigen (PSA) testing, will progress during a patient's lifetime. However, for many cancers early detection increases the potential for cure.
+          </p>
+          <p>
+            When cure is not possible, as in many cases of advanced cancer, judicious treatment with <span style={{ color: '#dc2626' }}>surgery</span>, <span style={{ color: '#dc2626' }}>chemotherapy</span>, <span style={{ color: '#dc2626' }}>immune therapy</span>, and/or <span style={{ color: '#dc2626' }}>radiation therapy</span> may improve quality of life and prolong survival. However, in other patients, particularly in patients with poor functional status and in those with comorbid conditions, such treatment may be poorly tolerated, and <span style={{ color: '#dc2626' }}>palliative care</span> may be appropriate.
+          </p>
+        </div>
+
+        {/* References 部分 */}
+        <div style={{ marginTop: '40px' }}>
+          <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '16px' }}>References</h3>
+          <p style={{ fontSize: '14px', lineHeight: '1.6' }}>
+            1. Ribatti D. The concept of immune surveillance against tumors. The first theories. Oncotarget 2017;8(4):7175-7180. doi:10.18632/oncotarget.12739
+          </p>
+          <p style={{ fontSize: '14px', lineHeight: '1.6' }}>
+            2. Swann JB, Smyth MJ. Immune surveillance of tumors. J Clin Invest 2007;117(5):1137-1146. doi:10.1172/JCI31405
+          </p>
+        </div>
+      </div>
+    )
+  },
+  {
+    id: 7,
+    title: 'Elevated Factor VIII, IX, and XI Levels',
+    content: (
+      <div style={{ 
+      maxWidth: '900px', 
+      margin: '0 auto', 
+      padding: '32px', 
+      backgroundColor: 'white',
+      fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif'
+    }}>
+      {/* 标题和按钮区域 */}
+      <div style={{ 
+        display: 'flex', 
+        justifyContent: 'space-between', 
+        alignItems: 'flex-start',
+        marginBottom: '24px'
+      }}>
+        <h1 style={{ 
+          fontSize: '28px', 
+          fontWeight: 'bold', 
+          color: '#1a202c', 
+          marginBottom: '16px',
+          lineHeight: '1.3'
+        }}>
+          Elevated Factor VIII, IX, and XI Levels
+        </h1>
+        <button style={{ 
+          backgroundColor: '#b71c1c', 
+          color: 'white', 
+          padding: '8px 24px', 
+          borderRadius: '4px', 
+          fontWeight: '600', 
+          display: 'flex', 
+          alignItems: 'center',
+          justifyContent: 'center',
+          border: 'none',
+          cursor: 'pointer'
+        }}>
+          <i className="fas fa-clipboard-list" style={{ marginRight: '8px' }}></i>VIEW PATIENT EDUCATION
+        </button>
+      </div>
+
+      {/* 功能图标区域 */}
+      <div style={{ 
+        display: 'flex', 
+        marginBottom: '24px'
+      }}>
+        <span style={{ 
+          cursor: 'pointer', 
+          color: '#4a5568', 
+          marginRight: '16px'
+        }}>
+          <i className="fas fa-print" style={{ fontSize: '18px' }}></i>
+        </span>
+        <span style={{ 
+          cursor: 'pointer', 
+          color: '#4a5568', 
+          marginRight: '16px'
+        }}>
+          <i className="fas fa-volume-up" style={{ fontSize: '18px' }}></i>
+        </span>
+        <span style={{ 
+          cursor: 'pointer', 
+          color: '#4a5568'
+        }}>
+          <i className="fas fa-qrcode" style={{ fontSize: '18px' }}></i>
+        </span>
+      </div>
+
+      {/* 作者信息区域 */}
+      <div style={{ marginBottom: '32px', fontSize: '14px' }}>
+        <p style={{ marginBottom: '8px' }}>
+          By <span style={{ color: '#dc2626' }}>Michael B. Streiff, MD</span>, Johns Hopkins University School of Medicine
+        </p>
+        <p style={{ marginBottom: '8px' }}>
+          Reviewed By <span style={{ color: '#dc2626' }}>Ashkan Emadi, MD, PhD</span>, West Virginia University School of Medicine, Robert C. Byrd Health Sciences Center
+        </p>
+        <p style={{ fontStyle: 'italic', color: '#718096' }}>
+          Reviewed/Revised Jul 2025
+        </p>
+      </div>
+
+      {/* 摘要区域 */}
+      <div style={{ 
+        backgroundColor: '#eef5f9', 
+        padding: '16px', 
+        marginBottom: '32px',
+        borderRadius: '4px',
+        borderLeft: '4px solid #0f4c81'
+      }}>
+        <p style={{ lineHeight: '1.6', color: '#1a202c' }}>
+          Increased levels of factors VIII, IX, and XI are risk factors for venous thromboembolism (VTE). While these levels are genetically determined, elevated levels of factor VIII can occur in chronic inflammation and other systemic disorders. Treatment is with anticoagulation for VTE and, in the case of elevated factor VIII, specific treatment for underlying disorders.
+        </p>
+      </div>
+
+      {/* 导航链接区域 */}
+      <div style={{ 
+        marginBottom: '32px', 
+        paddingBottom: '8px', 
+        borderBottom: '1px solid #e2e8f0'
+      }}>
+        <a href="#diagnosis" style={{ color: '#dc2626', fontWeight: 'bold', marginRight: '8px' }}>Diagnosis</a> | 
+        <a href="#treatment" style={{ color: '#dc2626', fontWeight: 'bold', marginLeft: '8px' }}>Treatment</a>
+      </div>
+
+      {/* 正文内容 */}
+      <div style={{ lineHeight: '1.6', marginBottom: '32px' }}>
+        <p>
+          Factors VIII, IX, and XI are clotting proteins made primarily in the liver. Factor VIII circulates in an inactive form bound to von Willebrand factor (VWF) until blood vessel injury activates it and separates them. Free Factor VIII then interacts with factor IX to facilitate clotting.
+        </p>
+        <p>
+          Elevated factor VIII levels were first recognized to be a risk factor for venous thromboembolism (VTE) in the Leiden Thrombophilia Study, a case control study of patients with a first episode of VTE without cancer, and age- and sex-matched controls. Factor VIII activity &gt; 150 IUL was associated with a nearly 5-fold increased risk of VTE <sup>(1)</sup>. Elevated factor VIII levels have also been identified as a risk factor for recurrent VTE <sup>(2)</sup>.
+        </p>
+        <p>
+          Elevated factor IX and factor XI antigen levels are also associated with an increased risk of VTE <sup>(3, 4)</sup>. However, the Longitudinal Investigation of Thromboembolism Etiology study also found that factor XI, but not factor IX, was associated with increased VTE risk when adjusted for age, sex, race, study, BMI (body mass index), and diabetes <sup>(5)</sup>.
+        </p>
+        <p>
+          Elevated von Willebrand factor levels have also been associated with an increased risk of VTE <sup>(6)</sup>.
+        </p>
+      </div>
+
+      {/* General references */}
+      <div style={{ marginBottom: '40px' }}>
+        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '16px' }}>General references</h3>
+        <ol style={{ fontSize: '14px', lineHeight: '1.6' }}>
+          <li>
+            van der Meer FJ, Koster T, Vandenbroucke JP, Briet E, Rosendaal FR. The Leiden Thrombophilia Study (LETS). <em>Thromb Haemost.</em> 1997;78(1):631–635.
+          </li>
+          <li>
+            Kylie PA, Minar E, Hirsch M, et al. High plasma levels of factor VIII and the risk of recurrent venous thromboembolism. <em>N Engl J Med.</em> 2000; 343(7):457-462. doi: 10.1056/NEJM200008173430702
+          </li>
+          <li>
+            van Hylckama Vlieg A, van der Linden IK, Bertina RM, Rosendaal FR. High levels of factor IX increase the risk of venous thrombosis. <em>Blood.</em> 2000; 95(12):3678-3682.
+          </li>
+          <li>
+            Meijers JC, Tekelenburg WL, Bouma BN, Bertina RM, Rosendaal FR. High levels of coagulation factor XI as a risk factor for venous thrombosis. <em>N Engl J Med.</em> 2000; 342(10):696-701. doi: 10.1056/NEJM200003093421004
+          </li>
+          <li>
+            Cushman M, O'Meara ES, Folsom AR, et al. Coagulation factors IX through XII and the risk of future venous thrombosis: the Longitudinal Investigation of Thromboembolism Etiology. <em>Blood.</em> 2009; 114(14):2878-2883. doi: 10.1182/blood-2009-05-219915
+          </li>
+          <li>
+            Edvardsen MS, Hindberg K, Hansen ES, et al. Plasma levels of von Willebrand factor and future risk of incident venous thromboembolism. <em>Blood Adv.</em> 2021;5(1):224-232. doi:10.1182/bloodadvances.2020003135
+          </li>
+        </ol>
+      </div>
+
+      {/* Diagnosis of Elevated Factor VIII, IX, and XI Levels */}
+      <div id="diagnosis" style={{ marginBottom: '32px' }}>
+        <div style={{ 
+          backgroundColor: '#0f4c81', 
+          color: 'white', 
+          padding: '12px 16px', 
+          marginBottom: '16px'
+        }}>
+          <h2 style={{ fontSize: '20px', fontWeight: 'bold' }}>Diagnosis of Elevated Factor VIII, IX, and XI Levels</h2>
+        </div>
+        <ul style={{ paddingLeft: '24px', marginBottom: '24px', lineHeight: '1.6' }}>
+          <li>Measurement of factor VIII, IX, or XI</li>
+        </ul>
+        <p style={{ lineHeight: '1.6' }}>
+          Levels of factor VIII, IX, and XI antigen and activity can be directly measured.
+        </p>
+        <p style={{ lineHeight: '1.6', marginBottom: '24px' }}>
+          Factor VIII, IX and XI have been associated with an increased risk of venous thromboembolism <sup>(1, 2)</sup>. When measuring factor activity levels, it is important to do testing in the absence of anticoagulants. Warfarin affects vitamin K dependent factors II, VII, IX and X activity and antigen levels. Direct oral anticoagulants can result in the underestimation of factor activity levels <sup>(3)</sup>. Factor antigen levels are not affected by direct oral anticoagulants.
+        </p>
+        
+        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '16px' }}>Diagnosis references</h3>
+        <ol style={{ fontSize: '14px', lineHeight: '1.6' }}>
+          <li>
+            Lowe G, Wu O, van Hylckama Vlieg A, Folsom A, Rosendaal F, Woodward M. Plasma levels of coagulation factors VIII and IX and risk of venous thromboembolism: Systematic review and meta-analysis. <em>Thromb Res.</em> 2023;229:31-39. doi:10.1016/j.thromres.2023.06.026
+          </li>
+          <li>
+            Meijers JC, Tekelenburg WL, Bouma BN, Bertina RM, Rosendaal FR. High levels of coagulation factor XI as a risk factor for venous thrombosis. <em>N Engl J Med.</em> 2000; 342(10):696-701. doi:10.1056/NEJM200003093421004
+          </li>
+          <li>
+            Douxfils J, Ageno W, Samama CM, et al. Laboratory testing in patients treated with direct oral anticoagulants: a practical guide for clinicians. <em>J Thromb Haemost.</em> 2018;16(2):209-219. doi:10.1111/jth.13912
+          </li>
+        </ol>
+      </div>
+
+      {/* Treatment of Elevated Factor VIII, IX, and XI Levels */}
+      <div id="treatment" style={{ marginBottom: '32px' }}>
+        <div style={{ 
+          backgroundColor: '#0f4c81', 
+          color: 'white', 
+          padding: '12px 16px', 
+          marginBottom: '16px'
+        }}>
+          <h2 style={{ fontSize: '20px', fontWeight: 'bold' }}>Treatment of Elevated Factor VIII, IX, and XI Levels</h2>
+        </div>
+        <ul style={{ paddingLeft: '24px', marginBottom: '24px', lineHeight: '1.6' }}>
+          <li>Anticoagulation</li>
+        </ul>
+        <p style={{ lineHeight: '1.6' }}>
+          Direct oral anticoagulants and vitamin K antagonists are effective for treatment of patients with elevated factor VIII, IX and XI levels with a venous thromboembolism <sup>(1)</sup>.
+        </p>
+        
+        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '16px' }}>Treatment reference</h3>
+        <ol style={{ fontSize: '14px', lineHeight: '1.6' }}>
+          <li>
+            Campello E, Spiezia L, Simion C, et al. Direct Oral Anticoagulants in Patients With Inherited Thrombophilia and Venous Thromboembolism: A Prospective Cohort Study. <em>J Am Heart Assoc.</em> 2020;9(23):e018917. doi:10.1161/JAHA.120.018917
+          </li>
+        </ol>
+      </div>
+    </div>
+    )
+  },
+
+];

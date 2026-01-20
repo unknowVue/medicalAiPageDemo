@@ -10,6 +10,8 @@ export interface DataType {
   id: number;
   title: string;
   time: string;
+  source: string;
+  classify: string;
   describe?: string;
   subTitleList: string[]
 }

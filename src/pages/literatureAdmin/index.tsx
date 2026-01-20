@@ -1,64 +1,83 @@
 import { Button, Card, Switch } from '@mantine/core'
 import scssStyle from './index.module.scss'
-import { IconChevronLeft, IconChevronRight, IconRefresh, IconSearch } from '@tabler/icons-react'
-import { Form, Input, DatePicker, Row, Col, Tag, Card as AntdCard, Table, type TableProps, InputNumber } from 'antd'
-import { CloseOutlined, QuestionCircleOutlined, RightOutlined, UpOutlined } from '@ant-design/icons'
+import { IconSearch } from '@tabler/icons-react'
+import { Form, Input, Card as AntdCard, Table, type TableProps, type PaginationProps } from 'antd'
+import { QuestionCircleOutlined, RightOutlined, UpOutlined } from '@ant-design/icons'
 import { useEffect, useRef, useState } from 'react'
-import classNames from 'classnames'
+import type { DataType } from '@/pages/infoDashboard/types'
 import PageHeader from '@/components/pageHeader'
-import Markdown from 'react-markdown'
 import { literatureData } from './mock'
+
+interface DataType {
+  id: number;
+  title: string;
+  content: React.ReactNode;
+}
+
+const columns: TableProps<DataType>['columns'] = [
+  {
+    title() {
+      return (
+        <div style={{ color: 'rgb(114 124 139)' }}>标题</div>
+      )
+    },
+    dataIndex: 'title',
+    key: 'title',
+    render: (text) => <a style={{ fontWeight: 'bolder', color: 'rgb(87,139,255)' }}>{text}</a>,
+  },
+];
 
 export default function LiteratureAdmin() {
   const markdown = "# Hello,Reacr Markdown"
   const [form] = Form.useForm()
-  const [searchForm, setSearchForm] = useState({ keyword: '' })
+  const [searchForm, setSearchForm] = useState({ keyword: '' })  
+  const [expandedRowKeys, setExpandedRowKeys] = useState<React.Key[]>([]);
 
   const [list, setList] = useState<any[]>([])
 
-  const pagination = useRef<any>({
-    current: 0,
-    total: 0,
-    quickPage: null
-  })
-  const [count, setCount] = useState(1)
-  
-  const forceRender = () => {
-    setCount(count === 1 ? 0 : 1)
-  }
+  const pagination = useRef<PaginationProps>({
+      showQuickJumper: true,
+      hideOnSinglePage: false,
+      showSizeChanger: true,
+      current: 1,
+      pageSize: 10,
+      total: 0,
+      size: "default",
+      pageSizeOptions: [10, 20, 50],
+      locale: {
+        jump_to: "跳转至",
+        items_per_page: "/ 页",
+        page: "",
+      },
+      onChange: (page, pageSize) => {
+        pagination.current.current = page;
+        pagination.current.pageSize = pageSize;
+        getList();
+      },
+    });
+
   
   const getList = () => {
     let res = []
     // 根据关键字搜索
-    let keyword = searchForm.keyword || ''
+    const keyword = searchForm.keyword || ''
     res = literatureData.filter(item => item.title.toLowerCase().includes(keyword.toLowerCase()))
-    pagination.current.total = res.length
-    setList(res)
-    pagination.current.current = 0
-    if(res.length > 0) {
-      pagination.current.current = 1
-      pagination.current.quickPage = null
+
+    const { current, pageSize } = pagination.current
+    const resByPage = res.slice((current! - 1) * pageSize!, current! * pageSize!)
+      setList(resByPage)
+      pagination.current.total = res.length
     }
-  }
+
+    const searchData = () => {
+      pagination.current.current = 1;
+      getList()
+    }
 
   useEffect(() => {
     getList()
   }, [])
 
-  const handleChangePage = (page: number) => {
-    pagination.current.current = page
-    // useRef的值改变不会触发组件重新渲染，所以手动强制更新一个useState的值
-    forceRender()
-  }
-
-  const handleClickJumpPage = () => {
-    if (pagination.current.quickPage) {
-      pagination.current.current = pagination.current.quickPage
-      pagination.current.quickPage = null
-      // useRef的值改变不会触发组件重新渲染，所以手动强制更新一个useState的值
-      forceRender()
-    }
-  }
 
   return (
     <>
@@ -85,7 +104,7 @@ export default function LiteratureAdmin() {
               {/* </Form.Item> */}
             </div>
             <div>
-              <Button leftSection={<IconSearch size={14} />} size='xs' variant="default" onClick={getList}>
+              <Button leftSection={<IconSearch size={14} />} size='xs' variant="default" onClick={searchData}>
                 搜索
               </Button>
             </div>
@@ -106,47 +125,77 @@ export default function LiteratureAdmin() {
           </div>
         </Form>
       </Card>
-      {/* 文章 */}
-      <Card style={{ marginTop: '20px' }} shadow='xs' padding="lg" radius="md" withBorder>
-        <div className={scssStyle.pagination}>
-          <Button 
-            disabled={pagination.current.current <= 1} 
-            className={scssStyle.prePage} 
-            leftSection={<IconChevronLeft size={14} />} 
-            size='xs' 
-            variant="default"
-            onClick={() => handleChangePage(pagination.current.current - 1)}
-          >
-            上一页
-          </Button>
-          <span className={scssStyle.page}>第 {pagination.current.current} / {pagination.current.total}</span>
-          <Button 
-            disabled={pagination.current.current >= pagination.current.total}
-            className={scssStyle.prePage} 
-            rightSection={<IconChevronRight size={14} />} 
-            size='xs' 
-            variant="default"
-            onClick={() => handleChangePage(pagination.current.current + 1)}
-          >
-            下一页
-          </Button>
-          <div className={scssStyle['vertical-line']}></div>
-          <div className={scssStyle['jump-box']}>
-            <span className={scssStyle.jump}>跳至</span>
-            <InputNumber placeholder='' style={{ width: '60px' }} onChange={(val) => { pagination.current.quickPage = val; forceRender() }} value={pagination.current.quickPage}  />
-            <Button size='xs' variant="default" style={{ color: '#8b8b8bff' }} onClick={handleClickJumpPage}>
-              跳转
-            </Button>
+      {/* 文献管理列表 */}
+
+      <Card style={{ marginTop: '20px' }} withBorder shadow="sm" radius="md">
+        <Card.Section>
+          <div className={scssStyle['list-header']}>
+            <div className={scssStyle.left}>
+              <div className={scssStyle['list-title']}>文献管理列表</div>
+            </div>
+            <div className={scssStyle.right}>
+              <span>共</span>
+              <span>{pagination.current.total}</span>
+              <span>条</span>
+            </div>
           </div>
-        </div>
-        <div style={{ paddingTop: '40px' }}>
-          {/* <Markdown>{markdown}</Markdown> */}
-          {
-            list[pagination.current.current - 1] ? (
-              list[pagination.current.current - 1].content
-            ) : null
-          }
-        </div>
+        </Card.Section>
+        <Card.Section bg={'#f9fafb'}>
+          <div className={scssStyle['list-content']}>
+            <Table<DataType> 
+              rowKey='id'
+              columns={columns} 
+              dataSource={list}
+              pagination={pagination.current}
+              rowClassName='table-row'
+              expandable={{
+                expandedRowRender: (record) => (
+                  // 这里应该是一个无限展开，因为是不清楚多少层可以展开，应该是这样一个数据结构，只要children有值就需要展开
+                  /**
+                   * [
+                   *    {
+                   *      title: 'xx',
+                   *      children: [
+                   *          {
+                   *              title: 'xx',
+                   *              children: []
+                   *           }
+                   *        ] 
+                   *     }
+                   * ]
+                   */
+                  <div>
+                     {record.content}
+                  </div>
+                ),
+                expandedRowKeys: expandedRowKeys,  // 使用状态控制展开的行
+                onExpand: (expanded, record) => {
+                  if (expanded) {
+                    setExpandedRowKeys([record.id]);
+                  } else {
+                    setExpandedRowKeys([]);
+                  }
+                },
+                columnWidth: 70,
+                expandIcon({ expanded, record }) {
+                  return (
+                    <div 
+                      onClick={() => {
+                      // 切换展开状态
+                      setExpandedRowKeys(prev => 
+                        prev.includes(record.id) ? [] : [record.id]
+                      );
+                    }}
+                      style={{ cursor: 'pointer' }}
+                    >
+                        {expanded ? <UpOutlined /> : <RightOutlined />}
+                    </div>
+                  )
+                }
+              }}
+            />
+          </div>
+        </Card.Section>
       </Card>
     </>
   )
