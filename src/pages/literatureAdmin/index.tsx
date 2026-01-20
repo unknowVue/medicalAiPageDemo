@@ -4,7 +4,6 @@ import { IconSearch } from '@tabler/icons-react'
 import { Form, Input, Card as AntdCard, Table, type TableProps, type PaginationProps } from 'antd'
 import { QuestionCircleOutlined, RightOutlined, UpOutlined } from '@ant-design/icons'
 import { useEffect, useRef, useState } from 'react'
-import type { DataType } from '@/pages/infoDashboard/types'
 import PageHeader from '@/components/pageHeader'
 import { literatureData } from './mock'
 
