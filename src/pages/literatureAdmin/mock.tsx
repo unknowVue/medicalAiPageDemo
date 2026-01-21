@@ -1,1131 +1,976 @@
 export const literatureData = [
   {
-    id: 1,
-    title: 'Introduction to the Cardiac Patient',
-    content: (
-      <>
-        <div style={{ 
-      maxWidth: '900px', 
-      margin: '0 auto', 
-      padding: '32px', 
+  id: 1,
+  title: 'Daratumumab plus pomalidomide and dexamethasone versus pomalidomide and dexamethasone alone in previously treated multiple myeloma (APOLLO): an open-label, randomised, phase 3 trial',
+  content: (
+<div style={{
+      maxWidth: '900px',
+      margin: '0 auto',
+      padding: '16px',
       backgroundColor: 'white',
-      fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif'
+      fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+      color: '#333',
+      lineHeight: '1.5'
     }}>
-      {/* 标题和按钮区域 */}
-      <div style={{ 
-        display: 'flex', 
-        // flexDirection: 'column', 
-        justifyContent: 'space-between', 
-        alignItems: 'flex-start',
+      {/* 标题区域 */}
+      <h1 style={{
+        fontSize: '20px',
+        fontWeight: 'bold',
+        color: '#1a202c',
+        marginBottom: '16px',
+        lineHeight: '1.3',
+        textDecoration: 'none'
+      }}>
+        Daratumumab plus pomalidomide and dexamethasone versus pomalidomide and dexamethasone alone in previously treated multiple myeloma (APOLLO): an open-label, randomised, phase 3 trial
+      </h1>
+
+      {/* 作者列表 */}
+      <div style={{
+        fontSize: '13px',
+        marginBottom: '12px',
+        color: '#4a5568'
+      }}>
+        <p style={{ color: '#0071bc' }}>Meletios A Dimopoulos <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>1</sup>, Evangelos Terpos <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>2</sup>, Mario Boccadoro <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>3</sup>, Sosana Delimpasi <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>4</sup>,
+        Meral Beksac <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>5</sup>, Erini Katodritou <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>6</sup>, Philippe Moreau <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>7</sup>, Luca Baldini <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>8</sup>, Argiris Symeonidis <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>9</sup>,
+        Jelena Bila <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>10</sup>, Alberto Oriol <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>11</sup>, Maria-Victoria Mateos <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>12</sup>, Hermann Einsele <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>13</sup>, Ioannis Orfanidis <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>14</sup>,
+        Tahamtan Ahmadi <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>15</sup>, Jon Kropiec <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>16</sup>, Tobias Kämpfenkel <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>17</sup>, Jordan M Schechter <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>18</sup>, Yanping Qiu <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>19</sup>,
+        Himal Amin <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>18</sup>, Jessica Vermeulen <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>17</sup>, Robin Carson <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>20</sup>, Pieter Sonneveld <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>21</sup>;
+        </p>
+        <p style={{ fontStyle: 'italic', color: '#0071bc' }}>APOLLO Trial Investigators</p>
+      </div>
+
+      {/* 合作者和DOI信息 */}
+      <div style={{
+        fontSize: '12px',
+        marginBottom: '12px',
+        color: '#212121'
+      }}>
+        <p>Collaborators, Affiliations + expand</p>
+        <p>PMID: 34087126 DOI: <span style={{ color: '#2563eb', cursor: 'pointer' }}>10.1016/S1470-2045(21)00128-5</span></p>
+      </div>
+
+      {/* 摘要标题 */}
+      <h2 style={{
+        fontSize: '16px',
+        fontWeight: 'bold',
+        color: '#1a202c',
+        marginBottom: '8px',
+        paddingBottom: '4px'
+      }}>
+        Abstract
+      </h2>
+
+      {/* 背景部分 */}
+      <div style={{ marginBottom: '12px' }}>
+        <p style={{ fontWeight: 'bold', display: 'inline', marginRight: '4px' }}>Background:</p>
+        <span style={{ fontSize: '13px' }}>
+          In a phase 1b study, intravenous daratumumab plus pomalidomide and dexamethasone induced a very good partial response or better rate of 42% and was well tolerated in patients with heavily pretreated multiple myeloma. We aimed to evaluate whether daratumumab plus pomalidomide and dexamethasone would improve progression-free survival versus pomalidomide and dexamethasone alone in patients with previously treated multiple myeloma.
+        </span>
+      </div>
+
+      {/* 方法部分 */}
+      <div style={{ marginBottom: '12px' }}>
+        <p style={{ fontWeight: 'bold', display: 'inline', marginRight: '4px' }}>Methods:</p>
+        <span style={{ fontSize: '13px' }}>
+          In this ongoing, open-label, randomised, phase 3 trial (APOLLO) done at 48 academic centres and hospitals across 12 European countries, eligible patients were aged 18 years or older, had relapsed or refractory multiple myeloma with measurable disease, had an Eastern Cooperative Oncology Group performance status of 0-2, had at least one previous line of therapy, including lenalidomide and a proteasome inhibitor, had a partial response or better to one or more previous lines of antimyeloma therapy, and were refractory to lenalidomide if only one previous line of therapy was received. Patients were randomly assigned (1:1) by an interactive web-response system in a random block size of two or four to receive pomalidomide and dexamethasone alone or daratumumab plus pomalidomide and dexamethasone. Randomisation was stratified by number of previous lines of therapy and International Staging System disease stage. All patients received oral pomalidomide (4 mg, once daily on days 1-21) and oral dexamethasone (40 mg once daily on days 1, 8, 15, and 22; 20 mg for those aged 75 years or older) at each 28-day cycle. The daratumumab plus pomalidomide and dexamethasone group received daratumumab (1800 mg subcutaneously or 16 mg/kg intravenously) weekly during cycles 1 and 2, every 2 weeks during cycles 3-6, and every 4 weeks thereafter until disease progression or unacceptable toxicity. The primary endpoint was progression-free survival in the intention-to-treat population. Safety was analysed in all patients who received at least one dose of study medication. This trial is registered with ClinicalTrials.gov, NCT03180736.
+        </span>
+      </div>
+
+      {/* 结果部分 */}
+      <div style={{ marginBottom: '12px' }}>
+        <p style={{ fontWeight: 'bold', display: 'inline', marginRight: '4px' }}>Findings:</p>
+        <span style={{ fontSize: '13px' }}>
+          Between June 22, 2017, and June 13, 2019, 304 patients (median age 67 years [IQR 60-72]; 161 [53%] men and 143 [47%] women) were randomly assigned to the daratumumab plus pomalidomide and dexamethasone group (n=151) or the pomalidomide and dexamethasone group (n=153). At a median follow-up of 16·9 months (IQR 14·4-20·6), the daratumumab plus pomalidomide and dexamethasone group showed improved progression-free survival compared with the pomalidomide and dexamethasone group (median 12·4 months [95% CI 8·3-19·3] vs 6·9 months [5·5-9·3]; hazard ratio 0·63 [95% CI 0·47-0·85], two-sided p=0·0018). The most common grade 3 or 4 adverse events were neutropenia (101 [68%] of 149 patients in the daratumumab plus pomalidomide and dexamethasone group vs 75 [56%] of 150 patients in the pomalidomide and dexamethasone group), anaemia (25 [17%] vs 32 [21%]), and thrombocytopenia (25 [17%] vs 27 [18%]). Serious adverse events occurred in 75 (50%) of 149 patients in the daratumumab plus pomalidomide and dexamethasone group versus 59 (39%) of 150 patients in the pomalidomide and dexamethasone group; pneumonia (23 [15%] vs 12 [8%] patients) and lower respiratory tract infection (18 [12%] vs 14 [9%]) were most common. Treatment-emergent deaths were reported in 11 (7%) patients in the daratumumab plus pomalidomide and dexamethasone group versus 11 (7%) patients in the pomalidomide and dexamethasone group.
+        </span>
+      </div>
+
+      {/* 结论部分 */}
+      <div style={{ marginBottom: '12px' }}>
+        <p style={{ fontWeight: 'bold', display: 'inline', marginRight: '4px' }}>Interpretation:</p>
+        <span style={{ fontSize: '13px' }}>
+          Among patients with relapsed or refractory multiple myeloma, daratumumab plus pomalidomide and dexamethasone reduced the risk of disease progression or death versus pomalidomide and dexamethasone alone and could be considered a new treatment option in this setting.
+        </span>
+      </div>
+
+      {/* 资金部分 */}
+      <div style={{ marginBottom: '16px' }}>
+        <p style={{ fontWeight: 'bold', display: 'inline', marginRight: '4px' }}>Funding:</p>
+        <span style={{ fontSize: '13px' }}>
+          European Myeloma Network and Janssen Research and Development.
+        </span>
+      </div>
+
+      {/* 版权声明 */}
+      <div style={{
+        fontSize: '12px',
+        color: '#718096',
+        marginBottom: '16px',
+        fontStyle: 'italic'
+      }}>
+        Copyright © 2021 Elsevier Ltd. All rights reserved.
+      </div>
+
+      {/* PubMed 声明链接 */}
+      <div style={{
+        fontSize: '12px',
         marginBottom: '24px'
       }}>
-        <h1 style={{ 
-          fontSize: '28px', 
-          fontWeight: 'bold', 
-          color: '#1a202c', 
-          marginBottom: '16px',
-          lineHeight: '1.3'
-        }}>
-          Introduction to the Cardiac Patient
-        </h1>
-        <button style={{ 
-          backgroundColor: '#b71c1c', 
-          color: 'white', 
-          padding: '8px 24px', 
-          borderRadius: '4px', 
-          fontWeight: '600', 
-          display: 'flex', 
-          alignItems: 'center',
-          justifyContent: 'center',
-          border: 'none',
-          cursor: 'pointer'
-        }}>
-          <i className="fas fa-clipboard-list" style={{ marginRight: '8px' }}></i>VIEW PATIENT EDUCATION
-        </button>
+        <a href="#" style={{ color: '#2563eb' }}>PubMed Disclaimer</a>
       </div>
 
-      {/* 功能图标区域 */}
-      <div style={{ 
-        display: 'flex', 
-        marginBottom: '24px'
+      {/* 利益冲突声明 */}
+      <h2 style={{
+        fontSize: '16px',
+        fontWeight: 'bold',
+        color: '#1a202c',
+        marginBottom: '8px',
+        paddingBottom: '4px'
       }}>
-        <span style={{ 
-          cursor: 'pointer', 
-          color: '#4a5568', 
-          marginRight: '16px'
-        }}>
-          <i className="fas fa-print" style={{ fontSize: '18px' }}></i>
-        </span>
-        <span style={{ 
-          cursor: 'pointer', 
-          color: '#4a5568', 
-          marginRight: '16px'
-        }}>
-          <i className="fas fa-volume-up" style={{ fontSize: '18px' }}></i>
-        </span>
-        <span style={{ 
-          cursor: 'pointer', 
-          color: '#4a5568'
-        }}>
-          <i className="fas fa-qrcode" style={{ fontSize: '18px' }}></i>
-        </span>
-      </div>
-
-      {/* 作者信息区域 */}
-      <div style={{ marginBottom: '32px', fontSize: '14px' }}>
-        <p style={{ marginBottom: '8px' }}>
-          By <span style={{ color: '#dc2626' }}>Jessica I. Gupta, MD</span>, University of Michigan Health; 
-          <span style={{ color: '#dc2626' }}> Michael J. Shea, MD</span>, Michigan Medicine at the University of Michigan
-        </p>
-        <p style={{ marginBottom: '8px' }}>
-          Reviewed By <span style={{ color: '#dc2626' }}>Jonathan G. Howlett, MD</span>, Cumming School of Medicine, University of Calgary
-        </p>
-        <p style={{ fontStyle: 'italic', color: '#718096' }}>
-          Reviewed/Revised Apr 2025
-        </p>
-      </div>
-
-      {/* 导航链接区域 */}
-      <div style={{ 
-        marginBottom: '32px', 
-        paddingBottom: '8px', 
-        borderBottom: '1px solid #e2e8f0'
-      }}>
-        <a href="#history" style={{ color: '#1a202c', fontWeight: 'bold', marginRight: '8px' }}>History</a> | 
-        <a href="#physical-examination" style={{ color: '#dc2626', fontWeight: 'bold', marginLeft: '8px' }}>Physical Examination</a>
-      </div>
-
-      {/* 介绍段落 */}
-      <p style={{ marginBottom: '32px', lineHeight: '1.6' }}>
-        Symptoms or physical examination findings may suggest a cardiovascular disorder. For confirmation, selected 
-        <span style={{ color: '#dc2626' }}> noninvasive and invasive cardiac tests</span> are usually done.(1)
-      </p>
-
-      {/* History 部分 */}
-      <div id="history" style={{ marginBottom: '32px' }}>
-        <div style={{ 
-          backgroundColor: '#0f4c81', 
-          color: 'white', 
-          padding: '12px 16px', 
-          marginBottom: '16px'
-        }}>
-          <h2 style={{ fontSize: '20px', fontWeight: 'bold' }}>History</h2>
-        </div>
-        <div style={{ paddingLeft: '4px' }}>
-          <p style={{ marginBottom: '16px', lineHeight: '1.6' }}>
-            A thorough history is fundamental; it cannot be replaced by testing. The history must include a thorough systems review 
-            because many symptoms apparently involving other systems (eg, dyspnea, indigestion) may be caused by cardiac disease. A 
-            family history is important because many cardiac disorders (eg, 
-            <span style={{ color: '#dc2626' }}> coronary artery disease</span>, 
-            <span style={{ color: '#dc2626' }}> systemic hypertension</span>, 
-            <span style={{ color: '#dc2626' }}> bicuspid aortic valve</span>, 
-            <span style={{ color: '#dc2626' }}> hypertrophic cardiomyopathy</span>, 
-            <span style={{ color: '#dc2626' }}> mitral valve prolapse</span>) have a heritable basis.
-          </p>
-          <p style={{ marginBottom: '16px', lineHeight: '1.6' }}>
-            Serious cardiac symptoms include 
-            <span style={{ color: '#dc2626' }}> chest pain</span> or discomfort, 
-            <span style={{ color: '#dc2626' }}> dyspnea</span>, 
-            <span style={{ color: '#dc2626' }}> weakness</span>, 
-            <span style={{ color: '#dc2626' }}> fatigue</span>, 
-            <span style={{ color: '#dc2626' }}> palpitations</span>, 
-            <span style={{ color: '#dc2626' }}> light-headedness</span>, sense of 
-            an impending faint, 
-            <span style={{ color: '#dc2626' }}> syncope</span>, and 
-            <span style={{ color: '#dc2626' }}> edema</span>. These symptoms are common in multiple cardiac diseases as well as in noncardiac diseases.
-          </p>
-        </div>
-      </div>
-
-      {/* Physical Examination 部分 */}
-      <div id="physical-examination" style={{ marginBottom: '32px' }}>
-        <div style={{ 
-          backgroundColor: '#0f4c81', 
-          color: 'white', 
-          padding: '12px 16px', 
-          marginBottom: '16px'
-        }}>
-          <h2 style={{ fontSize: '20px', fontWeight: 'bold' }}>Physical Examination</h2>
-        </div>
-        <div style={{ paddingLeft: '4px' }}>
-          <p style={{ marginBottom: '16px', lineHeight: '1.6' }}>
-            The general 
-            <span style={{ color: '#dc2626' }}> cardiovascular examination</span> and 
-            <span style={{ color: '#dc2626' }}> cardiac auscultation</span> are discussed elsewhere.
-          </p>
-          <p style={{ marginBottom: '16px', lineHeight: '1.6' }}>
-            Despite the ever-increasing use of cardiac imaging, bedside examination remains useful as it is always available and can be 
-            repeated as often as desired without the cost of a formal imaging test. Clinician-operated bedside devices, such as the 
-            sphygmomanometer and the stethoscope, have long been a part of the physical examination.
-          </p>
-          <p style={{ marginBottom: '16px', lineHeight: '1.6' }}>
-            <span style={{ color: '#dc2626' }}> Point-of-care ultrasound</span> done by the clinician at the bedside is an important adjunct to physical examination.
-          </p>
-        </div>
-      </div>
-
-      {/* Reference 部分 */}
-      <div style={{ marginTop: '40px' }}>
-        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '16px' }}>Reference</h3>
-        <p style={{ fontSize: '14px', lineHeight: '1.6' }}>
-          1. Fang JC, O'Gara PT: History and Physical Examination: An Evidence-Based Approach. In Libby P, Bonow RO, Mann DL, et al 
-          (eds): Braunwald's Heart Disease: A Textbook of Cardiovascular Medicine, 12th ed. Philadelphia, Elsevier, 2022, pp 123-140.
-        </p>
-      </div>
-    </div>
-      </>
-    )
-  },
-  {
-    id: 2,
-    title: 'Cardiovascular Examination',
-    content: (
-      <>
-        <div style={{ 
-      maxWidth: '900px', 
-      margin: '0 auto', 
-      padding: '32px', 
-      backgroundColor: 'white',
-      fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif'
-    }}>
-      {/* 标题和按钮区域 */}
-      <div style={{ 
-        display: 'flex', 
-        flexDirection: 'row', 
-        justifyContent: 'space-between', 
-        alignItems: 'flex-start',
+        Conflict of interest statement
+      </h2>
+      <div style={{
+        fontSize: '12px',
         marginBottom: '24px',
-        flexWrap: 'wrap'
+        lineHeight: '1.4'
       }}>
-        <h1 style={{ 
-          fontSize: '28px', 
-          fontWeight: 'bold', 
-          color: '#1a202c', 
-          marginBottom: '16px',
-          lineHeight: '1.3',
-          flex: '1 1 auto'
-        }}>
-          Cardiovascular Examination
-        </h1>
-        <button style={{ 
-          backgroundColor: '#b71c1c', 
-          color: 'white', 
-          padding: '8px 24px', 
-          borderRadius: '4px', 
-          fontWeight: '600', 
-          display: 'flex', 
-          alignItems: 'center',
-          justifyContent: 'center',
-          border: 'none',
-          cursor: 'pointer',
-          flex: '0 0 auto',
-          minWidth: '200px'
-        }}>
-          <i className="fas fa-clipboard-list" style={{ marginRight: '8px' }}></i>VIEW PATIENT EDUCATION
-        </button>
+        <p>
+          Declaration of interests MAD received honoraria for participation in advisory boards from Amgen, Takeda, Bristol Myers Squibb, Janssen, and BeiGene. ET received honoraria from Janssen, Genesis, Celgene, and Bristol Myers Squibb; research funding from Janssen and Genesis; and non-financial support from Genesis. MBo received honoraria and research funding from Sanofi, Celgene, Amgen, Janssen, Novartis, and Bristol Myers Squibb; received honoraria from AbbVie; received research funding from Mundipharma; and served on an entity's board of directors or advisory committees for Janssen and GlaxoSmithKline. MBe served as a member on an entity's board of directors or advisory committees, and on a speakers' bureau for Janssen, Sanofi, Amgen, Bristol Myers Squibb, Oncopeptides, and Takeda. EK received honoraria, research funding, personal fees, and non-financial support from Janssen-Cilag. PM served as a consultant for and received honoraria from Celgene/Bristol Myers Squibb, Janssen, Amgen, AbbVie, and Sanofi. AS served on advisory committees and received research funding from Bristol Myers Squibb; served on advisory committees and speakers' bureaus for, and received research funding from, AbbVie, Amgen, Celgene/Genesis, and Sanofi/Genzyme; and received research funding from Astellas. AO served on advisory committees for Celgene/Bristol Myers Squibb, Sanofi, Amgen, and GlaxoSmithKline. M-VM served as a consultant for, received honoraria from, and served on an entity's board of directors or advisory committees for, Janssen, Bristol Myers Squibb/Celgene, Amgen, Takeda, Oncopeptides, GlaxoSmithKline, Sanofi, Pfizer, Regeneron, AbbVie/Genentech, Seattle Genetics, and Adaptive Biotechnologies. HE served as a consultant for, received honoraria and research funding from, and served on a speakers' bureau for Janssen, Celgene, Amgen, GlaxoSmithKline, and Sanofi; and served as a consultant for, received honoraria from, and served on a speakers' bureau for Takeda. TA is an employee of Genmab and is current equity holder in a publicly traded company. JU was an employee of Janssen and equity holder in a publicly traded company at the time of the study, and is currently an employee of Genmab and equity holder in a publicly traded company. TK, JMS, YQ, and RC are employees of Janssen. HA and JV are employees of Janssen and are current equity holders in a publicly traded company. PS received research funding from Amgen, Celgene, Janssen, and Takeda, and received honoraria and served on advisory committees for Janssen, Celgene, Amgen, Takeda, Bristol Myers Squibb, and Skyline Dx. All other authors declare no competing interests.
+        </p>
       </div>
 
-      {/* 功能图标区域 */}
-      <div style={{ 
-        display: 'flex', 
+      {/* 相似文章 */}
+      <h2 style={{
+        fontSize: '16px',
+        fontWeight: 'bold',
+        color: '#1a202c',
+        marginBottom: '8px',
+        paddingBottom: '4px'
+      }}>
+        Similar articles
+      </h2>
+      <div style={{
+        fontSize: '13px',
         marginBottom: '24px'
       }}>
-        <span style={{ 
-          cursor: 'pointer', 
-          color: '#4a5568', 
-          marginRight: '16px'
-        }}>
-          <i className="fas fa-print" style={{ fontSize: '18px' }}></i>
-        </span>
-        <span style={{ 
-          cursor: 'pointer', 
-          color: '#4a5568', 
-          marginRight: '16px'
-        }}>
-          <i className="fas fa-volume-up" style={{ fontSize: '18px' }}></i>
-        </span>
-        <span style={{ 
-          cursor: 'pointer', 
-          color: '#4a5568'
-        }}>
-          <i className="fas fa-qrcode" style={{ fontSize: '18px' }}></i>
-        </span>
-      </div>
-
-      {/* 作者信息区域 */}
-      <div style={{ marginBottom: '32px', fontSize: '14px' }}>
-        <p style={{ marginBottom: '8px' }}>
-          By <span style={{ color: '#dc2626' }}>Jessica I. Gupta, MD</span>, University of Michigan Health; 
-          <span style={{ color: '#dc2626' }}> Michael J. Shea, MD</span>, Michigan Medicine at the University of Michigan
-        </p>
-        <p style={{ marginBottom: '8px' }}>
-          Reviewed By <span style={{ color: '#dc2626' }}>Jonathan G. Howlett, MD</span>, Cumming School of Medicine, University of Calgary
-        </p>
-        <p style={{ fontStyle: 'italic', color: '#718096' }}>
-          Reviewed/Revised Apr 2025
-        </p>
-      </div>
-
-      {/* 导航链接区域 */}
-      <div style={{ 
-        marginBottom: '24px', 
-        paddingBottom: '8px', 
-        borderBottom: '1px solid #e2e8f0',
-        overflowX: 'auto',
-        whiteSpace: 'nowrap'
-      }}>
-        <a href="#vital-signs" style={{ color: '#dc2626', fontWeight: 'bold' }}>Vital Signs</a> | 
-        <a href="#pulses" style={{ color: '#4a5568', marginLeft: '8px', marginRight: '8px' }}>Pulses</a> | 
-        <a href="#veins" style={{ color: '#4a5568', marginLeft: '8px', marginRight: '8px' }}>Veins</a> | 
-        <a href="#chest-inspection" style={{ color: '#4a5568', marginLeft: '8px', marginRight: '8px' }}>Chest Inspection and Palpation</a> | 
-        <a href="#lung-examination" style={{ color: '#4a5568', marginLeft: '8px', marginRight: '8px' }}>Lung Examination</a> | 
-        <a href="#abdominal-examination" style={{ color: '#4a5568', marginLeft: '8px', marginRight: '8px' }}>Abdominal and Extremity Examination</a> | 
-        <a href="#pocus" style={{ color: '#4a5568', marginLeft: '8px', marginRight: '8px' }}>Point-of-Care Ultrasound (POCUS)</a> | 
-        <a href="#multimedia" style={{ color: '#4a5568', marginLeft: '8px' }}>
-          <i className="fas fa-images" style={{ marginRight: '4px' }}></i>Multimedia
+        <ul style={{ listStyleType: 'none', paddingLeft: '0', margin: 0 }}>
+          <li style={{ marginBottom: '8px' }}>
+            <a href="#" style={{ color: '#2563eb' }}>
+              Pomalidomide, bortezomib, and dexamethasone for patients with relapsed or refractory multiple myeloma previously treated with lenalidomide (OPTIMISM): a randomised, open-label, phase 3 trial.
+            </a>
+            <p style={{ fontSize: '12px', margin: '2px 0 0 0' }}>
+              Richardson PG, Oriol A, Beksac M, Liberati AM, Galli M, Schjesvold F, Lindsay J, Weisel K, White D, Facon T, San Miguel J, Sunami K, O'Sorman P, Sonneveld P, Robak P, Semochkin S, Schey S, Yu X, Doerr T, Bensmaina A, Biyukov T, Peluso T, Zokai M, Anderson K, Dimopoulos M; OPTIMMM trial investigators. 
+            </p>
+            <p style={{ color: '#4D8055' }}>Lancet Oncol. 2019 Jun;20(6):781-794. doi: 10.1016/S1470-2045(19)30152-4. Epub 2019 May 13. PMID: 31097405    Clinical Trial.</p>
+          </li>
+          <li style={{ marginBottom: '8px' }}>
+            <a href="#" style={{ color: '#2563eb' }}>
+              Pembrolizumab plus pomalidomide and dexamethasone for patients with relapsed or refractory multiple myeloma (KEYNOTE-183): a randomised, open-label, phase 3 trial.
+            </a>
+            <p style={{ fontSize: '12px', margin: '2px 0 0 0' }}>
+              Mateos MV, Blacklock H, Schjesvold F, Oriol A, Simpson D, George A, Goldschmidt H, Larocca A, Chanan-Khan A, Sherbenou D, Aviv I, Benyamini N, Iida S, Matsumoto M, Suzuki K, Ribrag V, Usmani SZ, Jagannath S, Ocio E, Rodriguez-Otero P, San Miguel J, Kher U, Farooqui M, Liao J, Marinello P, Lonial S; KEYNOTE-183 Investigators. 
+            </p>
+            <p style={{ color: '#4D8055' }}>Lancet Haematol. 2019 Sep;6(9):e459-e469. doi: 10.1016/S2352-3026(19)30110-3. Epub 2019 Jul 18. PMID: 31327687    Clinical Trial.
+            </p>
+          </li>
+          <li style={{ marginBottom: '8px' }}>
+            <a href="#" style={{ color: '#2563eb' }}>
+              Melflufen or pomalidomide plus dexamethasone for patients with multiple myeloma refractory to lenalidomide (OCEAN): a randomised, head-to-head, open-label, phase 3 study.
+            </a>
+            <p style={{ fontSize: '12px', margin: '2px 0 0 0' }}>
+              Melflufen or pomalidomide plus dexamethasone for patients with multiple myeloma refractory to lenalidomide (OCEAN): a randomised, head-to-head, open-label, phase 3 study.
+            </p>
+            <p style={{ color: '#4D8055' }}>Lancet Haematol. 2022 Feb;9(2):e98-e110. doi: 10.1016/S2352-3026(21)00381-1. Epub 2022 Jan 12.
+PMID: 35032434Clinical Trial.</p>
+          </li>
+          <li style={{ marginBottom: '8px' }}>
+            <a href="#" style={{ color: '#2563eb' }}>
+              The European medicines agency review of pomalidomide in combination with low-dose dexamethasone for the treatment of adult patients with multiple myeloma: summary of the scientific assessment of the committee for medicinal products for human use.
+            </a>
+            <p style={{ fontSize: '12px', margin: '2px 0 0 0' }}>
+              Hanaizi Z, Flores B, Hemmings R, Camarero J, Sancho-Lopez A, Salmonson T, Gisselbrecht C, Laane E, Pignatti F.
+            </p>
+            <p style={{ color: '#4D8055' }}>Oncologist. 2015 Mar;20(3):329-34. doi: 10.1634/theoncologist.2014-0073. Epub 2015 Feb 11.
+PMID: 25673103    <span style={{ color: '#C05600' }}>Free PMC article.</span>    Review.</p>
+          </li>
+          <li style={{ marginBottom: '8px' }}>
+            <a href="#" style={{ color: '#2563eb' }}>
+              Survival trends using DPd vs. other triplets in early RRMM patients: a population-adjusted indirect treatment comparison.
+            </a>
+            <p style={{ fontSize: '12px', margin: '2px 0 0 0' }}>
+              Anwer F, Lan T, Dolph M, Moradian H, Slaff S, Shih YH, Tang D.
+            </p>
+            <p style={{ color: '#4D8055' }}>Future Oncol. 2025 Jan;21(2):221-230. doi: 10.1080/14796694.2024.2426443. Epub 2024 Nov 29.
+PMID: 39611661    <span style={{ color: '#C05600' }}>Free PMC article.</span></p>
+          </li>
+        </ul>
+        <a href="#" style={{ fontSize: '12px', color: '#2563eb' }}>
+          See all similar articles
         </a>
       </div>
 
-      {/* 介绍段落 */}
-      <p style={{ marginBottom: '24px', lineHeight: '1.6' }}>
-        Complete examination of all systems is essential to detect peripheral and systemic effects of cardiac disorders and evidence of noncardiac disorders that might affect the heart(1). Examination includes the following:
-      </p>
-
-      {/* 检查项目列表 */}
-      <ul style={{ marginBottom: '24px', paddingLeft: '24px', lineHeight: '1.6' }}>
-        <li style={{ marginBottom: '8px' }}>General appearance</li>
-        <li style={{ marginBottom: '8px' }}>Vital sign measurement</li>
-        <li style={{ marginBottom: '8px' }}>Pulse palpation and auscultation</li>
-        <li style={{ marginBottom: '8px' }}>Vein observation</li>
-        <li style={{ marginBottom: '8px' }}>Chest inspection and palpation</li>
-        <li style={{ marginBottom: '8px' }}>Cardiac percussion, palpation, and <span style={{ color: '#dc2626' }}>auscultation</span></li>
-        <li style={{ marginBottom: '8px' }}>Lung examination, including percussion, palpation, and auscultation</li>
-        <li style={{ marginBottom: '8px' }}>Extremity and abdomen examination</li>
-      </ul>
-
-      {/* 额外说明 */}
-      <p style={{ marginBottom: '24px', lineHeight: '1.6' }}>
-        <span style={{ color: '#dc2626' }}>Cardiac auscultation</span> is discussed in a separate topic. Despite the ever-increasing use of cardiac imaging, bedside auscultation remains useful as it is always available and can be repeated as often as desired without cost.
-      </p>
-
-      <p style={{ marginBottom: '32px', lineHeight: '1.6' }}>
-        Examination also includes the collection of other patient data.
-      </p>
-
-      {/* 引用部分 */}
-      <div style={{ marginBottom: '40px' }}>
-        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '16px' }}>General reference</h3>
-        <p style={{ fontSize: '14px', lineHeight: '1.6' }}>
-          1. Fang JC, O'Gara PT: History and Physical Examination: An Evidence-Based Approach. In Libby P, Bonow RO, Mann DL, et al (eds): Braunwald's Heart Disease: A Textbook of Cardiovascular Medicine, 12th ed. Philadelphia, Elsevier, 2022, pp 123-140.
-        </p>
-      </div>
-
-      {/* Vital Signs 部分 */}
-      <div id="vital-signs" style={{ marginBottom: '32px' }}>
-        <div style={{ 
-          backgroundColor: '#0f4c81', 
-          color: 'white', 
-          padding: '12px 16px', 
-          marginBottom: '16px'
-        }}>
-          <h2 style={{ fontSize: '20px', fontWeight: 'bold' }}>Vital Signs</h2>
-        </div>
-        <div style={{ paddingLeft: '4px' }}>
-          <p style={{ marginBottom: '16px', lineHeight: '1.6' }}>
-            Vital signs include
-          </p>
-          <ul style={{ marginBottom: '16px', paddingLeft: '24px', lineHeight: '1.6' }}>
-            <li style={{ marginBottom: '8px' }}>Blood pressure</li>
-            <li style={{ marginBottom: '8px' }}>Heart rate and rhythm</li>
-            <li style={{ marginBottom: '8px' }}>Respiratory rate</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-      </>
-    )
-  },
-  {
-    id: 3,
-    title: 'Evaluating Drug Efficacy and Safety',
-    content: (
-      <>
-        <div style={{ 
-      maxWidth: '900px', 
-      margin: '0 auto', 
-      padding: '32px', 
-      backgroundColor: 'white',
-      fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif'
-    }}>
-      {/* 标题和按钮区域 */}
-      <div style={{ 
-        display: 'flex', 
-        flexDirection: 'row', 
-        justifyContent: 'space-between', 
-        alignItems: 'flex-start',
-        marginBottom: '24px',
-        flexWrap: 'wrap'
+      {/* 被引用文章 */}
+      <h2 style={{
+        fontSize: '16px',
+        fontWeight: 'bold',
+        color: '#1a202c',
+        marginBottom: '8px',
+        paddingBottom: '4px'
       }}>
-        <h1 style={{ 
-          fontSize: '28px', 
-          fontWeight: 'bold', 
-          color: '#1a202c', 
-          marginBottom: '16px',
-          lineHeight: '1.3',
-          flex: '1 1 auto'
-        }}>
-          Evaluating Drug Efficacy and Safety
-        </h1>
-        <button style={{ 
-          backgroundColor: '#b71c1c', 
-          color: 'white', 
-          padding: '8px 24px', 
-          borderRadius: '4px', 
-          fontWeight: '600', 
-          display: 'flex', 
-          alignItems: 'center',
-          justifyContent: 'center',
-          border: 'none',
-          cursor: 'pointer',
-          flex: '0 0 auto',
-          minWidth: '200px'
-        }}>
-          <i className="fas fa-clipboard-list" style={{ marginRight: '8px' }}></i>VIEW PATIENT EDUCATION
-        </button>
-      </div>
-
-      {/* 功能图标区域 */}
-      <div style={{ 
-        display: 'flex', 
+        Cited by
+      </h2>
+      <div style={{
+        fontSize: '13px',
         marginBottom: '24px'
       }}>
-        <span style={{ 
-          cursor: 'pointer', 
-          color: '#4a5568', 
-          marginRight: '16px'
-        }}>
-          <i className="fas fa-print" style={{ fontSize: '18px' }}></i>
-        </span>
-        <span style={{ 
-          cursor: 'pointer', 
-          color: '#4a5568', 
-          marginRight: '16px'
-        }}>
-          <i className="fas fa-volume-up" style={{ fontSize: '18px' }}></i>
-        </span>
-        <span style={{ 
-          cursor: 'pointer', 
-          color: '#4a5568'
-        }}>
-          <i className="fas fa-qrcode" style={{ fontSize: '18px' }}></i>
-        </span>
-      </div>
-
-      {/* 作者信息区域 */}
-      <div style={{ marginBottom: '32px', fontSize: '14px' }}>
-        <p style={{ marginBottom: '8px' }}>
-          By <span style={{ color: '#dc2626' }}>Shalini S. Lynch, PharmD</span>, University of California San Francisco School of Pharmacy
-        </p>
-        <p style={{ marginBottom: '8px' }}>
-          Reviewed By <span style={{ color: '#dc2626' }}>Eva M. Vivian, PharmD, MS, PhD</span>, University of Wisconsin School of Pharmacy
-        </p>
-        <p style={{ fontStyle: 'italic', color: '#718096' }}>
-          Reviewed/Revised Apr 2025
-        </p>
-      </div>
-
-      {/* 导航链接区域 */}
-      <div style={{ 
-        marginBottom: '24px', 
-        paddingBottom: '8px', 
-        borderBottom: '1px solid #e2e8f0',
-        overflowX: 'auto',
-        whiteSpace: 'nowrap'
-      }}>
-        <a href="#clinical-drug-trials" style={{ color: '#dc2626', fontWeight: 'bold' }}>Clinical Drug Trials</a> | 
-        <a href="#efficacy-effectiveness" style={{ color: '#4a5568', marginLeft: '8px', marginRight: '8px' }}>Efficacy and Effectiveness</a> | 
-        <a href="#placebos" style={{ color: '#4a5568', marginLeft: '8px', marginRight: '8px' }}>Placebos</a> | 
-        <a href="#drug-safety" style={{ color: '#4a5568', marginLeft: '8px' }}>Drug Safety</a>
-      </div>
-
-      {/* 介绍段落 */}
-      <p style={{ marginBottom: '16px', lineHeight: '1.6' }}>
-        A medication (or any medical treatment) should be used only when it will benefit a patient. Benefit takes into account both whether the medication produces the desired result (efficacy) and the type and likelihood of adverse effects (safety). Cost is commonly also balanced with benefit (see <span style={{ color: '#dc2626' }}>Economic Analyses in Clinical Decision Making</span>).
-      </p>
-
-      <p style={{ marginBottom: '32px', lineHeight: '1.6' }}>
-        When new drugs are developed, they are evaluated in clinical trials, which evaluate for efficacy and safety.
-      </p>
-
-      {/* Clinical Drug Trials 部分 */}
-      <div id="clinical-drug-trials" style={{ marginBottom: '32px' }}>
-        <div style={{ 
-          backgroundColor: '#0f4c81', 
-          color: 'white', 
-          padding: '12px 16px', 
-          marginBottom: '16px'
-        }}>
-          <h2 style={{ fontSize: '20px', fontWeight: 'bold' }}>Clinical Drug Trials</h2>
-        </div>
-        <div style={{ paddingLeft: '4px' }}>
-          <p style={{ marginBottom: '16px', lineHeight: '1.6' }}>
-            Promising compounds can be identified by mass screening of hundreds or thousands of molecules for biologic activity. In other cases, knowledge of the specific molecular pathophysiology of a target disease allows for rational drug design via computer modeling or modification of existing pharmaceutical agents.
-          </p>
-          
-          <p style={{ marginBottom: '16px', lineHeight: '1.6' }}>
-            The safety of newly developed drugs is initially evaluated in vitro in preclinical research in human cell cultures or in animal models.
-          </p>
-          
-          <p style={{ marginBottom: '16px', lineHeight: '1.6' }}>
-            Clinical research in humans to evaluate the safety and efficacy of new drugs involves clinical trials conducted in phases (see <span style={{ color: '#dc2626' }}>U.S. Food & Drug Administration: Clinical Research</span>):
-          </p>
-          
-          <p style={{ marginBottom: '16px', lineHeight: '1.6' }}>
-            <span style={{ fontWeight: 'bold' }}>Phase 1</span> evaluates safety and dosage in humans. Varying amounts of the compound are given to a small number (often 20 to 100) of healthy volunteers to determine the dose at which toxicity first appears.
-          </p>
-          
-          <p style={{ marginBottom: '16px', lineHeight: '1.6' }}>
-            <span style={{ fontWeight: 'bold' }}>Phase 2</span> evaluates efficacy in treating the target disease and side effects. The compound is given to a larger group of people (up to several hundred) for treatment of the target disease. An additional goal is to determine an optimal dose-response range.
-          </p>
-          
-          <p style={{ marginBottom: '16px', lineHeight: '1.6' }}>
-            <span style={{ fontWeight: 'bold' }}>Phase 3</span> evaluates the drug's therapeutic effect in larger (often hundreds to thousands of people), more heterogeneous populations with the target disease and compares the drug with existing treatments, a placebo, or both. The purpose is to verify efficacy and detect adverse effects that may not have been observed during phases 1 and 2. This phase provides most of the safety data.
-          </p>
-        </div>
+        <ul style={{ listStyleType: 'none', paddingLeft: '0', margin: 0 }}>
+          <li style={{ marginBottom: '8px' }}>
+            <a href="#" style={{ color: '#2563eb' }}>
+              RNA-sequencing based first choice of treatment and determination of risk in multiple myeloma.
+            </a>
+            <p style={{ fontSize: '12px', margin: '2px 0 0 0' }}>
+              Ende-Rajaratnam M, Beck S, Benes V, Salwender H, Bertsch U, Scheid C, Hänel M, Weisel K, Hielscher T, Raab MS, Goldschmidt H, Jauch A, Maes K, De Bruyne E, Menu E, De Veerman D, Vanderkerken K, Seckinger A, Hose D.
+            </p>
+            <p style={{ color: '#4D8055' }}>Front Immunol. 2023 Nov 15;14:1266700. doi: 10.3389/fimmu.2023.1266700. eCollection 2023. PMID: 38085768</p>
+          </li>
+          <li style={{ marginBottom: '8px' }}>
+            <a href="#" style={{ color: '#2563eb' }}>
+              Carfilzomib, Pomalidomide, and Dexamethasone As Second-line Therapy for Lenalidomide-refractory Multiple Myeloma.
+            </a>
+            <p style={{ fontSize: '12px', margin: '2px 0 0 0' }}>
+              Sonneveld P, Zweegman S, Cavo M, Nasserinejad K, Broijl A, Troia R, Pour L, Croockewit S, Corradini P, Patriarca F, Wu K, Droogendijk J, Bos G, Hajek R, Teresa Petrucci M, Ypma P, Zojer N, Minnema MC, Boccadoro M.
+            </p>
+            <p style={{ color: '#4D8055' }}>Hemasphere. 2022 Sep 30;6(10):e786. doi: 10.1097/HS9.0000000000000786. eCollection 2022 Oct. PMID: 36204691<span style={{ color: '#C05600' }}>Free PMC article.</span></p>
+          </li>
+          <li style={{ marginBottom: '8px' }}>
+            <a href="#" style={{ color: '#2563eb' }}>
+              Recent advances in the treatment of multiple myeloma: a brief review. <span style={{ color: '#C05600' }}>Free PMC article.</span>
+            </a>
+            <p style={{ fontSize: '12px', margin: '2px 0 0 0' }}>
+              Bobin A, Leleu X.
+            </p>
+            <p style={{ color: '#4D8055' }}>Fac Rev. 2022 Sep 29;11:28. doi: 10.12703/r/11-28. eCollection 2022. PMID: 36225211 <span style={{ color: '#C05600' }}>Free PMC article.</span><span style={{ color: '#C05600' }}>Review.</span></p>
+          </li>
+          <li style={{ marginBottom: '8px' }}>
+            <a href="#" style={{ color: '#2563eb' }}>
+              Difficult-to-treat patients with relapsed/refractory multiple myeloma: A review of clinical trial results.
+            </a>
+            <p style={{ fontSize: '12px', margin: '2px 0 0 0' }}>
+              Raab MS, Zamagni E, Manier S, Rodriguez-Otero P, Schjesvold F, Broijl A.
+            </p>
+            <p style={{ color: '#4D8055' }}>EJHaem. 2023 Aug 2;4(4):1117-1131. doi: 10.1002/jha2.743. eCollection 2023 Nov. PMID: 38024633 <span style={{ color: '#C05600' }}>Free PMC article.</span><span style={{ color: '#C05600' }}>Review.</span></p>
+          </li>
+          <li style={{ marginBottom: '8px' }}>
+            <a href="#" style={{ color: '#2563eb' }}>
+              A Broad Learning System to Predict the 28-Day Mortality of Patients Hospitalized with Community-Acquired Pneumonia: A Case-Control Study.
+            </a>
+            <p style={{ fontSize: '12px', margin: '2px 0 0 0' }}>
+              Yuan J, Liu X, Wang WF, Zhang JJ.
+            </p>
+            <p style={{ color: '#4D8055' }}>Comput Math Methods Med. 2022 Mar 4;2022:7003272. doi: 10.1155/2022/7003272. eCollection 2022. PMID: 35281948 <span style={{ color: '#C05600' }}>Free PMC article.</span></p>
+          </li>
+          <li style={{ marginBottom: '8px' }}>
+            <a href="#" style={{ color: '#2563eb' }}>
+              A real-life study of daratumumab-bortezomib-dexamethasone (D-VD) in lenalidomide exposed/refractory multiple myeloma patients: a report from the Triveneto Myeloma Working Group.
+            </a>
+            <p style={{ fontSize: '12px', margin: '2px 0 0 0' }}>
+              Barilà G, Quaglia FM, Furlan A, Pescosta N, Bonalumi A, Marcon C, Pascotta A, Tinelli M, De March E, Lico A, Sartori R, Clissa C, De Sabbata G, Nappi D, Porrazzo M, De Marchi R, Pavan L, Tosetto A, Gherlinzoni F, Krampera M, Bassan R, Patriarca F, Semenzato G, Zambello R.
+            </p>
+            <p style={{ color: '#4D8055' }}>Ann Hematol. 2024 Jan;103(1):125-132. doi: 10.1007/s00277-023-05443-8. Epub 2023 Sep 20. PMID: 37731147 <span style={{ color: '#C05600' }}>Free PMC article.</span></p>
+          </li>
+        </ul>
+        <a href="#" style={{ fontSize: '12px', color: '#2563eb' }}>
+          See all "Cited by" articles
+        </a>
       </div>
     </div>
-      </>
-    )
-  },
-  {
-    id: 4,
-    title: 'Adverse Drug Reactions',
-    content: (
-      <>
-        <div style={{ 
-      maxWidth: '900px', 
-      margin: '0 auto', 
-      padding: '32px', 
+  )
+},
+{
+  id: 2,
+  title: 'Carfilzomib, daratumumab, and dexamethasone (KdD) vs. lenalidomide–sparing pomalidomide–containing triplet regimens for relapsed/refractory multiple myeloma: an indirect treatment comparison',
+  content: (
+    <div style={{
+      maxWidth: '900px',
+      margin: '0 auto',
+      padding: '16px',
       backgroundColor: 'white',
-      fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif'
+      fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+      color: '#333',
+      lineHeight: '1.5'
     }}>
-      {/* 标题和按钮区域 */}
-      <div style={{ 
-        display: 'flex', 
-        flexDirection: 'row', 
-        justifyContent: 'space-between', 
-        alignItems: 'flex-start',
-        marginBottom: '24px',
-        flexWrap: 'wrap'
+      {/* 标题区域 */}
+      <h1 style={{
+        fontSize: '20px',
+        fontWeight: 'bold',
+        color: '#1a202c',
+        marginBottom: '16px',
+        lineHeight: '1.3',
+        textDecoration: 'none'
       }}>
-        <h1 style={{ 
-          fontSize: '28px', 
-          fontWeight: 'bold', 
-          color: '#1a202c', 
-          marginBottom: '16px',
-          lineHeight: '1.3',
-          flex: '1 1 auto'
-        }}>
-          Adverse Drug Reactions
-        </h1>
-        <button style={{ 
-          backgroundColor: '#b71c1c', 
-          color: 'white', 
-          padding: '8px 24px', 
-          borderRadius: '4px', 
-          fontWeight: '600', 
-          display: 'flex', 
-          alignItems: 'center',
-          justifyContent: 'center',
-          border: 'none',
-          cursor: 'pointer',
-          flex: '0 0 auto',
-          minWidth: '200px'
-        }}>
-          <i className="fas fa-clipboard-list" style={{ marginRight: '8px' }}></i>VIEW PATIENT EDUCATION
-        </button>
+        Carfilzomib, daratumumab, and dexamethasone (KdD) vs. lenalidomide–sparing pomalidomide–containing triplet regimens for relapsed/refractory multiple myeloma: an indirect treatment comparison
+      </h1>
+
+      {/* 作者列表 */}
+      <div style={{
+        fontSize: '13px',
+        marginBottom: '12px',
+        color: '#4a5568'
+      }}>
+        <p style={{ color: '#0071bc' }}>Katja Weisel <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>1</sup>, Meletios A Dimopoulos <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>2</sup>, Meral Beksac <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>3</sup>, Xavier Leleu <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>4</sup>,
+        Joshua Richter <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>5</sup>, Bart Heeg <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>6</sup>, Sachin Patel <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>7</sup>, Istvan Majer <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>8</sup>,
+        Ian McFadden <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>9</sup>, Joseph Mikhael <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>10</sup></p>
       </div>
 
-      {/* 副标题 */}
-      <div style={{ marginBottom: '24px' }}>
-        <h2 style={{ 
-          fontSize: '18px', 
-          fontWeight: 'normal', 
-          color: '#4a5568',
-          fontStyle: 'italic'
-        }}>
-          (Adverse Drug Effects, Medication Side Effects)
-        </h2>
+      {/* 合作者和DOI信息 */}
+      <div style={{
+        fontSize: '12px',
+        marginBottom: '12px',
+        color: '#212121'
+      }}>
+        <p>Affiliations + expand</p>
+        <p>PMID: 38345269 DOI: <span style={{ color: '#2563eb', cursor: 'pointer' }}>10.1080/10428194.2023.2300051</span></p>
+        <p><span  style={{ color: '#C05600' }}>Free article</span></p>
       </div>
 
-      {/* 功能图标区域 */}
-      <div style={{ 
-        display: 'flex', 
+      {/* 摘要标题 */}
+      <h2 style={{
+        fontSize: '16px',
+        fontWeight: 'bold',
+        color: '#1a202c',
+        marginBottom: '8px',
+        paddingBottom: '4px'
+      }}>
+        Abstract
+      </h2>
+
+      {/* 摘要内容 */}
+      <div style={{ marginBottom: '16px', fontSize: '13px' }}>
+        <p style={{ marginBottom: '10px' }}>
+          Nearly all patients with multiple myeloma eventually relapse or become refractory to treatment. Lenalidomide is increasingly administered in the frontline until disease progression or intolerance to therapy, resulting in the need for highly effective, lenalidomide-sparing options. In this study, carfilzomib plus daratumumab and dexamethasone were evaluated against lenalidomide-sparing, pomalidomide-containing triplets using matching-adjusted indirect comparison in the absence of head-to-head data. The analyses utilized long-term follow-up data from the CANDOR study (NCT03158688).
+        </p>
+        <p style={{ marginBottom: '10px' }}>
+          Treatment with carfilzomib, daratumumab, and dexamethasone resulted in significantly longer progression-free survival (hazard ratio 0.60 [95% confidence interval: 0.37, 0.88]) vs. pomalidomide plus bortezomib and dexamethasone, and numerically longer progression-free survival (hazard ratio 0.77 [95% confidence interval: 0.50, 1.08]) vs. daratumumab plus pomalidomide and dexamethasone in patients with relapsed/refractory multiple myeloma and previous lenalidomide exposure, the majority of whom were lenalidomide refractory.
+        </p>
+        <p>
+          Carfilzomib plus daratumumab and dexamethasone offers a highly effective, lenalidomide-sparing treatment option for this population.
+        </p>
+      </div>
+
+      {/* 关键词 */}
+      <div style={{
+        fontSize: '13px',
+        marginBottom: '16px',
+        color: '#4a5568'
+      }}>
+        <span style={{ fontWeight: 'bold', marginRight: '4px' }}>Keywords:</span>
+        <span>Carfilzomib; indirect treatment comparison; lenalidomide-sparing; progression-free survival; relapsed/refractory multiple myeloma.</span>
+      </div>
+
+
+      {/* PubMed 声明链接 */}
+      <div style={{
+        fontSize: '12px',
         marginBottom: '24px'
       }}>
-        <span style={{ 
-          cursor: 'pointer', 
-          color: '#4a5568', 
-          marginRight: '16px'
-        }}>
-          <i className="fas fa-print" style={{ fontSize: '18px' }}></i>
-        </span>
-        <span style={{ 
-          cursor: 'pointer', 
-          color: '#4a5568', 
-          marginRight: '16px'
-        }}>
-          <i className="fas fa-volume-up" style={{ fontSize: '18px' }}></i>
-        </span>
-        <span style={{ 
-          cursor: 'pointer', 
-          color: '#4a5568'
-        }}>
-          <i className="fas fa-qrcode" style={{ fontSize: '18px' }}></i>
-        </span>
+        <a href="#" style={{ color: '#2563eb' }}>PubMed Disclaimer</a>
       </div>
 
-      {/* 作者信息区域 */}
-      <div style={{ marginBottom: '32px', fontSize: '14px' }}>
-        <p style={{ marginBottom: '8px' }}>
-          By <span style={{ color: '#dc2626' }}>Shalini S. Lynch, PharmD</span>, University of California San Francisco School of Pharmacy
-        </p>
-        <p style={{ marginBottom: '8px' }}>
-          Reviewed By <span style={{ color: '#dc2626' }}>Eva M. Vivian, PharmD, MS, PhD</span>, University of Wisconsin School of Pharmacy
-        </p>
-        <p style={{ fontStyle: 'italic', color: '#718096' }}>
-          Reviewed/Revised Apr 2025 | Modified May 2025
-        </p>
-      </div>
-
-      {/* 定义框 */}
-      <div style={{ 
-        backgroundColor: '#edf2f7', 
-        padding: '16px', 
-        marginBottom: '32px',
-        borderRadius: '4px'
+      {/* 相似文章 */}
+      <h2 style={{
+        fontSize: '16px',
+        fontWeight: 'bold',
+        color: '#1a202c',
+        marginBottom: '8px',
+        paddingBottom: '4px'
       }}>
-        <p style={{ lineHeight: '1.6' }}>
-          Adverse drug reaction (also called adverse drug effect) is a broad term referring to an unintended effect of a medication that is undesirable, unpleasant, or harmful.
-        </p>
-      </div>
-
-      {/* 导航链接区域 */}
-      <div style={{ 
-        marginBottom: '24px', 
-        paddingBottom: '8px', 
-        borderBottom: '1px solid #e2e8f0',
-        overflowX: 'auto',
-        whiteSpace: 'nowrap'
+        Similar articles
+      </h2>
+      <div style={{
+        fontSize: '13px',
+        marginBottom: '24px'
       }}>
-        <a href="#classification" style={{ color: '#dc2626', fontWeight: 'bold' }}>Classification</a> | 
-        <a href="#risk-factors" style={{ color: '#4a5568', marginLeft: '8px', marginRight: '8px' }}>Risk Factors</a> | 
-        <a href="#symptoms" style={{ color: '#4a5568', marginLeft: '8px', marginRight: '8px' }}>Symptoms and Signs</a> | 
-        <a href="#diagnosis" style={{ color: '#4a5568', marginLeft: '8px', marginRight: '8px' }}>Diagnosis</a> | 
-        <a href="#treatment" style={{ color: '#4a5568', marginLeft: '8px', marginRight: '8px' }}>Treatment</a> | 
-        <a href="#prevention" style={{ color: '#4a5568', marginLeft: '8px', marginRight: '8px' }}>Prevention</a> | 
-        <a href="#multimedia" style={{ color: '#4a5568', marginLeft: '8px' }}>
-          <i className="fas fa-images" style={{ marginRight: '4px' }}></i>Multimedia
+        <ul style={{ listStyleType: 'none', paddingLeft: '0', margin: 0 }}>
+          <li style={{ marginBottom: '12px' }}>
+            <a href="#" style={{ color: '#2563eb', textDecoration: 'none' }}>
+              Survival trends using DPd vs. other triplets in early RRMM patients: a population-adjusted indirect treatment comparison.
+            </a>
+            <p style={{ fontSize: '12px', margin: '2px 0 0 0', color: '#4a5568' }}>
+              Anwer F, Lan T, Dolph M, Moradian H, Slaff S, Shih YH, Tang D.
+            </p>
+            <p style={{ fontSize: '12px', color: '#4D8055' }}>
+              Future Oncol. 2025 Jan;21(2):221-230. doi: 10.1080/14796694.2024.2426443. Epub 2024 Nov 29.
+              <br />
+              PMID: 39611661 <span style={{ color: '#C05600' }}>Free PMC article.</span>
+            </p>
+          </li>
+          <li style={{ marginBottom: '12px' }}>
+            <a href="#" style={{ color: '#2563eb', textDecoration: 'none' }}>
+              Carfilzomib, dexamethasone, and daratumumab versus carfilzomib and dexamethasone for patients with relapsed or refractory multiple myeloma (CANDOR): updated outcomes from a randomised, multicentre, open-label, phase 3 study.
+            </a>
+            <p style={{ fontSize: '12px', margin: '2px 0 0 0', color: '#4a5568' }}>
+              Usmani SZ, Quach H, Mateos MV, Landgren O, Leleu X, Siegel D, Weisel K, Gavriatopoulou M, Oriol A, Rabin N, Nooka A, Qi M, Beksac M, Jakubowiak A, Ding B, Zahtien-Kumeli A, Yusuf A, Dimopoulos M.
+            </p>
+            <p style={{ fontSize: '12px', color: '#4D8055' }}>
+              Lancet Oncol. 2022 Jan;23(1):65-76. doi: 10.1016/S1470-2045(21)00579-9. Epub 2021 Dec 3.
+              <br />
+              PMID: 34871550 Clinical Trial.
+            </p>
+          </li>
+          <li style={{ marginBottom: '12px' }}>
+            <a href="#" style={{ color: '#2563eb', textDecoration: 'none' }}>
+              Comparative Efficacy of Daratumumab Monotherapy and Pomalidomide Plus Low-Dose Dexamethasone in the Treatment of Multiple Myeloma: A Matching Adjusted Indirect Comparison.
+            </a>
+            <p style={{ fontSize: '12px', margin: '2px 0 0 0', color: '#4a5568' }}>
+              Van Sanden S, Ito T, Diels J, Vogel M, Belch A, Oriol A.
+            </p>
+            <p style={{ fontSize: '12px', color: '#4D8055' }}>
+              Oncologist. 2018 Mar;23(3):279-287. doi: 10.1634/theoncologist.2017-0103. Epub 2017 Nov 30.
+              <br />
+              PMID: 29192016 <span style={{ color: '#C05600' }}>Free PMC article.</span>
+            </p>
+          </li>
+          <li style={{ marginBottom: '12px' }}>
+            <a href="#" style={{ color: '#2563eb', textDecoration: 'none' }}>
+              Pomalidomide, bortezomib, and dexamethasone for patients with relapsed or refractory multiple myeloma previously treated with lenalidomide (OPTIMISMM): a randomised, open-label, phase 3 trial.
+            </a>
+            <p style={{ fontSize: '12px', margin: '2px 0 0 0', color: '#4a5568' }}>
+              Richardson PG, Oriol A, Beksac M, Liberati AM, Galli M, Schjesvold F, Lindsay J, Weisel K, White D, Facon T, San Miguel J, Sunami K, O'Gorman P, Sonneveld P, Robak P, Semochkin S, Schey S, Yu X, Doerr T, Bensmaine A, Biyukov T, Pehuo L, Zaki M, Anderson K, Dimopoulos M; OPTIMISMM trial investigators.
+            </p>
+            <p style={{ fontSize: '12px', color: '#4D8055' }}>
+              Lancet Oncol. 2019 Jun;20(6):781-794. doi: 10.1016/S1470-2045(19)30152-4. Epub 2019 May 13.
+              <br />
+              PMID: 31097405 Clinical Trial.
+            </p>
+          </li>
+          <li style={{ marginBottom: '12px' }}>
+            <a href="#" style={{ color: '#2563eb', textDecoration: 'none' }}>
+              Carfilzomib in combination with daratumumab in the management of relapsed multiple myeloma.
+            </a>
+            <p style={{ fontSize: '12px', margin: '2px 0 0 0', color: '#4a5568' }}>
+              Touzeau C, Antier C, Moreau P.
+            </p>
+            <p style={{ fontSize: '12px', color: '#4D8055' }}>
+              Future Oncol. 2021 Mar;17(9):993-998. doi: 10.2217/fon-2020-0907. Epub 2020 Dec 8.
+              <br />
+              PMID: 33289427 Review.
+            </p>
+          </li>
+        </ul>
+        <a href="#" style={{ fontSize: '12px', color: '#2563eb' }}>
+          See all similar articles
         </a>
       </div>
 
-      {/* 介绍段落 */}
-      <p style={{ marginBottom: '16px', lineHeight: '1.6' }}>
-        In the United States from 2011 to 2024, more than 29 million adverse drug reactions (ADRs) were reported through the 
-        <span style={{ color: '#dc2626' }}> FDA Adverse Events Reporting System (FAERS)</span> (1) (see figure FAERS Adverse Events Reporting System). 
-        Approximately 3 to 6% of hospital admissions in the United States and 2.5 to 10.6% of admissions in Europe are due to ADRs (2). 
-        In low- and middle-income countries, approximately 134 million ADRs occur annually, resulting in 2.6 million deaths.
-      </p>
-
-      <p style={{ marginBottom: '16px', lineHeight: '1.6' }}>
-        All medications have the potential for adverse drug reactions (ADRs), and thus, the balance of benefits and risks should be considered whenever a medication is prescribed. 
-        ADRs can range from mild to severe. Serious adverse events are those that can cause disability, are life-threatening, result in hospitalization or death, or are congenital anomalies.
-      </p>
-
-      <p style={{ marginBottom: '32px', lineHeight: '1.6' }}>
-        The commonly used term <span style={{ fontStyle: 'italic' }}>side effect</span> is imprecise, often used to refer to the unintended effects of a medication that occur within the medication's therapeutic range.
-      </p>
-
-      {/* References 部分 */}
-      <div style={{ marginBottom: '32px' }}>
-        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '16px' }}>References</h3>
-        <p style={{ fontSize: '14px', lineHeight: '1.6', marginBottom: '12px' }}>
-          1. FDA Adverse Event Reporting System (FAERS). Public Dashboard, Database and Questions and Answers on FDA's Adverse Event Reporting System (FAERS). Accessed March 4, 2025.
-        </p>
-        <p style={{ fontSize: '14px', lineHeight: '1.6' }}>
-          2. Chenchula S, Atal S, Uppugunduri CRS. A review of real-world evidence on preemptive pharmacogenomic testing for preventing adverse drug reactions: a reality for future health care. Pharmacogenomics J. 2024;24(2):9. Published 2024 Mar 15. doi:10.1038/s41397-024-00326-1
-        </p>
-      </div>
-    </div>
-      </>
-    )
-  },
-  {
-    id: 5,
-    title: 'Medication Errors',
-    content: (
-      <>
-        <div style={{ 
-      maxWidth: '900px', 
-      margin: '0 auto', 
-      padding: '32px', 
-      backgroundColor: 'white',
-      fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif'
-    }}>
-      {/* 标题和按钮区域 */}
-      <div style={{ 
-        display: 'flex', 
-        flexDirection: 'row', 
-        justifyContent: 'space-between', 
-        alignItems: 'flex-start',
-        marginBottom: '24px',
-        flexWrap: 'wrap'
+      {/* 被引用文章 */}
+      <h2 style={{
+        fontSize: '16px',
+        fontWeight: 'bold',
+        color: '#1a202c',
+        marginBottom: '8px',
+        paddingBottom: '4px'
       }}>
-        <h1 style={{ 
-          fontSize: '28px', 
-          fontWeight: 'bold', 
-          color: '#1a202c', 
-          marginBottom: '16px',
-          lineHeight: '1.3',
-          flex: '1 1 auto'
-        }}>
-          Medication Errors
-        </h1>
-        <button style={{ 
-          backgroundColor: '#b71c1c', 
-          color: 'white', 
-          padding: '8px 24px', 
-          borderRadius: '4px', 
-          fontWeight: '600', 
-          display: 'flex', 
-          alignItems: 'center',
-          justifyContent: 'center',
-          border: 'none',
-          cursor: 'pointer',
-          flex: '0 0 auto',
-          minWidth: '200px'
-        }}>
-          <i className="fas fa-clipboard-list" style={{ marginRight: '8px' }}></i>VIEW PATIENT EDUCATION
-        </button>
-      </div>
-
-      {/* 功能图标区域 */}
-      <div style={{ 
-        display: 'flex', 
+        Cited by
+      </h2>
+      <div style={{
+        fontSize: '13px',
         marginBottom: '24px'
       }}>
-        <span style={{ 
-          cursor: 'pointer', 
-          color: '#4a5568', 
-          marginRight: '16px'
-        }}>
-          <i className="fas fa-print" style={{ fontSize: '18px' }}></i>
-        </span>
-        <span style={{ 
-          cursor: 'pointer', 
-          color: '#4a5568', 
-          marginRight: '16px'
-        }}>
-          <i className="fas fa-volume-up" style={{ fontSize: '18px' }}></i>
-        </span>
-        <span style={{ 
-          cursor: 'pointer', 
-          color: '#4a5568'
-        }}>
-          <i className="fas fa-qrcode" style={{ fontSize: '18px' }}></i>
+        <ul style={{ listStyleType: 'none', paddingLeft: '0', margin: 0 }}>
+          <li style={{ marginBottom: '12px' }}>
+            <a href="#" style={{ color: '#2563eb', textDecoration: 'none' }}>
+              Strengths and Weaknesses of Different Therapeutic Strategies for the Treatment of Patients with Multiple Myeloma Who Progress After the Frontline Use of Lenalidomide: A Narrative Review.
+            </a>
+            <p style={{ fontSize: '12px', margin: '2px 0 0 0', color: '#4a5568' }}>
+              Mele G, Sgherza N, Pastore D, Musto P.
+            </p>
+            <p style={{ fontSize: '12px', color: '#4D8055' }}>
+              J Clin Med. 2024 Oct 19;13(20):6238. doi: 10.3390/jcm13206238.
+              <br />
+              PMID: 39458188 <span style={{ color: '#C05600' }}>Free PMC article.</span> Review.
+            </p>
+          </li>
+          <li style={{ marginBottom: '12px' }}>
+            <a href="#" style={{ color: '#2563eb', textDecoration: 'none' }}>
+              Using protein turnover assay to explore the drug mechanism of Carfilzomib.
+            </a>
+            <p style={{ fontSize: '12px', margin: '2px 0 0 0', color: '#4a5568' }}>
+              Tao Y, Ding X, Jia C, Wang C, Li C.
+            </p>
+            <p style={{ fontSize: '12px', color: '#4D8055' }}>
+              Acta Biochim Biophys Sin (Shanghai). 2024 Jul 8;57(2):209-222. doi: 10.3724/spbi.424.
+              <br />
+              PMID: 38978505 <span style={{ color: '#C05600' }}>Free PMC article.</span> Review.
+            </p>
+          </li>
+          <li style={{ marginBottom: '12px' }}>
+            <a href="#" style={{ color: '#2563eb', textDecoration: 'none' }}>
+              Aggressive Extramedullary Multiple Myeloma Presenting as Small Bowel Obstruction.
+            </a>
+            <p style={{ fontSize: '12px', margin: '2px 0 0 0', color: '#4a5568' }}>
+              Wurtz PJ, McGovern K, Shah J, Stoll KE, Moore D.
+            </p>
+            <p style={{ fontSize: '12px', color: '#4D8055' }}>
+              J Hematol. 2025 Apr;14(2):86-93. doi: 10.14740/jh2031. Epub 2025 Feb 25.
+              <br />
+              PMID: 40336918 <span style={{ color: '#C05600' }}>Free PMC article.</span> Review.
+            </p>
+          </li>
+        </ul>
+        <a href="#" style={{ fontSize: '12px', color: '#2563eb' }}>
+          See all "Cited by" articles
+        </a>
+      </div>
+    </div>
+  )
+},
+{
+  id: 3,
+  title: 'Venetoclax or placebo in combination with bortezomib and dexamethasone in relapsed or refractory multiple myeloma (BELLINI): final overall survival results from a randomised, phase 3 study',
+  content: (
+    <div style={{
+      maxWidth: '900px',
+      margin: '0 auto',
+      padding: '16px',
+      backgroundColor: 'white',
+      fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+      color: '#333',
+      lineHeight: '1.5'
+    }}>
+      {/* 标题区域 */}
+      <h1 style={{
+        fontSize: '20px',
+        fontWeight: 'bold',
+        color: '#1a202c',
+        marginBottom: '16px',
+        lineHeight: '1.3',
+        textDecoration: 'none'
+      }}>
+        Venetoclax or placebo in combination with bortezomib and dexamethasone in relapsed or refractory multiple myeloma (BELLINI): final overall survival results from a randomised, phase 3 study
+      </h1>
+
+      {/* 作者列表 */}
+      <div style={{
+        fontSize: '13px',
+        marginBottom: '12px',
+        color: '#4a5568'
+      }}>
+        <p style={{ color: '#0071bc' }}>Shaji K Kumar <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>1</sup>, Simon J Harrison <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>2</sup>, Michele Cavo <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>3</sup>, Javier de la Rubia <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>4</sup>, Rakesh Popat <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>5</sup>,
+        Cristina Gasparetto <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>6</sup>, Vania Hungria <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>7</sup>, Hans Salwender <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>8</sup>, Kenshi Suzuki <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>9</sup>, Inho Kim <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>10</sup>,
+        Maika Onishi <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>11</sup>, Grace Ku <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>11</sup>, Rajvineeth Pothacamury <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>12</sup>, Muhammad Jalaluddin <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>13</sup>, Jiewei Zeng <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>14</sup>,
+        Jeremy A Ross <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>12</sup>, Edyta Dobkowska <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>13</sup>, Philippe Moreau <sup style={{ color: 'black', backgroundColor: '#f1f1f1' }}>14</sup></p>
+      </div>
+
+      {/* 合作者和DOI信息 */}
+      <div style={{
+        fontSize: '12px',
+        marginBottom: '12px',
+        color: '#212121'
+      }}>
+        <p>Affiliations + expand</p>
+        <p>PMID: 40587991 DOI: <span style={{ color: '#2563eb', cursor: 'pointer' }}>10.1016/S2352-3026(25)00139-5</span></p>
+      </div>
+
+      {/* 摘要标题 */}
+      <h2 style={{
+        fontSize: '16px',
+        fontWeight: 'bold',
+        color: '#1a202c',
+        marginBottom: '8px',
+        paddingBottom: '4px'
+      }}>
+        Abstract
+      </h2>
+
+      {/* 摘要内容 */}
+      <div style={{ marginBottom: '16px', fontSize: '13px' }}>
+        <p style={{ marginBottom: '10px', fontWeight: 'bold' }}>
+          Background:
+        </p>
+        <p style={{ marginBottom: '10px' }}>
+          The phase 3 BELLINI primary endpoint was met, showing superior progression-free survival with venetoclax versus placebo plus bortezomib and dexamethasone in patients with relapsed or refractory multiple myeloma as assessed by an independent review committee. However, venetoclax showed increased early mortality. Here, we report the final overall survival analysis.
+        </p>
+        <p style={{ marginBottom: '10px', fontWeight: 'bold' }}>
+          Methods:
+        </p>
+        <p style={{ marginBottom: '10px' }}>
+          The randomised, double-blind, multicentre, phase 3 BELLINI study enrolled patients aged 18 years or older with relapsed or refractory multiple myeloma, Eastern Cooperative Oncology Group performance status of 2 or less, and one to three previous therapies, across 90 hospitals in 16 countries. Eligible patients were centrally randomly assigned (2:1, stratified by previous proteasome inhibitor exposure and number of previous lines of therapies) via interactive response technology system (block size 3) to once-daily venetoclax (800 mg orally) or placebo with bortezomib (1-3 mg/m² subcutaneously or intravenously) and dexamethasone (20 mg orally), administered in 21-day cycles for initial eight cycles, followed by 35-day cycles until discontinuation. The primary endpoint was progression-free survival as assessed by an independent review committee in the intention-to-treat population; this analysis reports overall survival and investigator-assessed progression-free survival in the intention-to-treat population. Safety analyses were done in patients who received at least one dose of the study drug. This study is registered with ClinicalTrials.gov (NCT02755597) and is completed.
+        </p>
+        <p style={{ marginBottom: '10px', fontWeight: 'bold' }}>
+          Findings:
+        </p>
+        <p style={{ marginBottom: '10px' }}>
+          From July 19, 2016, to Oct 31, 2017, 291 patients were assigned to venetoclax (n=194) or placebo (n=97); 33 patients (28 in the venetoclax group and five in the placebo group) remained on treatment at the time of this analysis. Of the 291 patients, 152 (52%) were men and 139 (48%) were women. 87 (30%) of 291 patients were Asian, 12 (4%) were Black or African American, 190 (65%) were White, and 32 (11%) were Hispanic or Latino. At 45-6 months (IQR 43-6-48-3) median follow-up, median overall survival was not reached in the venetoclax group (not reached [NR] [95% CI 44-4-not estimable]) or in the placebo group (NR [95% CI 44-0-not estimable]; HR 1-19 [95% CI 0.80-1.77]); p=0-39). Median progression-free survival was 23-4 months (95% CI 16-2-26-4) with venetoclax versus 11-4 months (95% CI 9.5-14.6) with placebo (HR 0-58 [95% CI 0-43-0-78]; p=0-00026). The most common grade 3 or 4 adverse events were thrombocytopenia (51 [26%] of 193 in the venetoclax group vs 38 [40%] of 96 in the placebo group) and neutropenia (58 [30%] of 193 vs eight [8%] of 96 patients). Treatment-related adverse events led to death in four (2%) of 193 patients in the venetoclax group (two patients with pneumonia, one with death, and one with both multiple organ dysfunction syndrome and septic shock) and none in the placebo group.
+        </p>
+        <p style={{ marginBottom: '10px', fontWeight: 'bold' }}>
+          Interpretation:
+        </p>
+        <p>
+          Final overall survival analysis in the BELLINI study showed overall survival favouring placebo over venetoclax and progression-free survival favouring venetoclax over placebo, indicating venetoclax usage should be avoided in the general relapsed or refractory multiple myeloma population.
+        </p>
+      </div>
+
+      {/* 关键词 */}
+      <div style={{
+        fontSize: '13px',
+        marginBottom: '16px',
+        color: '#4a5568'
+      }}>
+        <span style={{ fontWeight: 'bold', marginRight: '4px' }}>Keywords:</span>
+        <span>Venetoclax; bortezomib; dexamethasone; relapsed/refractory multiple myeloma; overall survival; BELLINI trial.</span>
+      </div>
+
+      {/* 资金来源 */}
+      <div style={{
+        fontSize: '13px',
+        marginBottom: '16px',
+        color: '#4a5568'
+      }}>
+        <span style={{ fontWeight: 'bold', marginRight: '4px' }}>Funding:</span>
+        <span>Abbvie and Genentech.</span>
+      </div>
+
+      {/* 版权信息 */}
+      <div style={{
+        fontSize: '12px',
+        marginBottom: '24px',
+        color: '#666',
+        fontStyle: 'italic'
+      }}>
+        <p>Copyright © 2025 Elsevier Ltd. All rights reserved, including those for text and data mining, AI training, and similar technologies.</p>
+      </div>
+
+      {/* PubMed 声明链接 */}
+      <div style={{
+        fontSize: '12px',
+        marginBottom: '24px'
+      }}>
+        <a href="#" style={{ color: '#2563eb' }}>PubMed Disclaimer</a>
+      </div>
+
+      {/* 利益冲突声明 */}
+      <h2 style={{
+        fontSize: '16px',
+        fontWeight: 'bold',
+        color: '#1a202c',
+        marginBottom: '8px',
+        paddingBottom: '4px'
+      }}>
+        Conflict of interest statement
+      </h2>
+      <div style={{
+        fontSize: '13px',
+        marginBottom: '24px',
+        color: '#4a5568'
+      }}>
+        <p>Declaration of interests SKK has grants or contracts from AbbVie, Amgen, Bristol Myers Squibb, Carsgen, GSK, Janssen, Genentech-Roche, Sanofi, Takeda, and Telogenomics; has served as a consultant with no personal payments for AbbVie, Amgen, ArcellX BeiGene, Bristol Myers Squibb, Carsgen, Apizyme, Glycostem, GSK, K36, Menarini, Moderna, Pfizer, Regeneron, Genentech-Roche, Sanofi, Takeda, Telogenomics, Trillium, and Window Therapeutics; has served as a consultant with personal payments for Antengene, Calyx, and CVS Caremark; and has participation on an Independent Review Committee for Oncopeptides. SJH has received grants or contracts paid to institution from Janssen; has received honoraria paid to institution from AbbVie and Janssen; and has participated on a data safety monitoring board or advisory board for Janssen and Karyopharm. JdIR has received payment or honoraria from Amgen, GSK, Johnson & Johnson, and Pfizer; and has received support for attending meetings or travel from Amgen, Johnson & Johnson, and Pfizer. RPop has received grants or contracts from GSK and Pfizer; has received consultancy fees from GSK and Roche; has received payment or honoraria from GSK, AbbVie, Bristol Myers Squibb, Johnson & Johnson, and Pfizer; has received support for attending meetings or travel from GSK and Johnson & Johnson; and has participation on a data safety monitoring board or advisory board for Johnson & Johnson, Galapagos, Sanofi, Roche, and GSK. RPop is supported by the National Institute for Health and Care Research University College London Hospitals Biomedical Research Centre. CG has received payment or honoraria from GSK; has served on an advisory board and as a speaker for Janssen, Bristol Myers Squibb, Pfizer, Karyopharm, and Sanofi. VH has received payment or honoraria from AbbVie, Amgen, Bristol Myers Squibb, Janssen, GSK, Pfizer, Sanofi and Takeda. HS has received payment or honoraria from and participated on advisory boards for AbbVie, Amgen, AstraZeneca, Bristol Myers Squibb—Celgene, GSK, Janssen, Oncopeptides, Pfizer, Sanofi, and Stemline; and has received support for attending meetings or travel from Amgen, Bristol Myers Squibb—Celgene, Janssen, and Sanofi. KS has received lecture fees from Takeda, Ono Pharmaceutical, Novartis, Sanofi, Bristol Myers Squibb, and Janssen; and has received advisory fees from special reference laboratories. MO and GK are currently employed by Genentech-Roche and may own stock in Genentech-Roche. RPot, MJ, JZ, JAR, and ED are currently employed by AbbVie and may own AbbVie stock or stock options. PM has received payment or honoraria for advisory boards from AbbVie, Amgen, Celgene-Bristol Myers Squibb, GSK, Janssen, Takeda, Pfizer, and Sanofi. MC and IL declare no competing interests.</p>
+      </div>
+
+      {/* 相似文章 */}
+      <h2 style={{
+        fontSize: '16px',
+        fontWeight: 'bold',
+        color: '#1a202c',
+        marginBottom: '8px',
+        paddingBottom: '4px'
+      }}>
+        Similar articles
+      </h2>
+      <div style={{
+        fontSize: '13px',
+        marginBottom: '24px'
+      }}>
+        <ul style={{ listStyleType: 'none', paddingLeft: '0', margin: 0 }}>
+          <li style={{ marginBottom: '12px' }}>
+            <a href="#" style={{ color: '#2563eb', textDecoration: 'none' }}>
+              Belantamab mafodotin plus bortezomib and dexamethasone in patients with relapsed or refractory multiple myeloma (DREAMM-7): updated overall survival analysis from a global, randomised, open-label, phase 3 trial.
+            </a>
+            <p style={{ fontSize: '12px', margin: '2px 0 0 0', color: '#4a5568' }}>
+              Hungria V, Robak P, Hus M, Zherebtsova V, Ward C, Ho PI, Hajek R, Kim K, Grosicki S, Sia H, Bryant A, Pitombeira de Lacerda M, Martinez GA, Sureda Balari A, Sandhu I, Cerchione C, Ganly P, Dimopoulos MA, Fu C, Garg M, Abdallah AO, Gatt ME, Oriol Rocafiguera A, Cavo M, Rifkin R, Fujisaki T, Mielnik M, Ficek J, Mantero A, Pirooz N, Varghese S, Lee J, McKeown A, Rogers R, Baig H, Eccersley L, Roy-Ghanta S, Mukhopadhyay P, Nielsen J, Opalinska J, Mateos MV; DREAMM-7 study investigators.
+            </p>
+            <p style={{ fontSize: '12px', color: '#4D8055' }}>
+              Lancet Oncol. 2025 Aug;26(8):1067-1080. doi: 10.1016/S1470-2045(25)00330-4. Epub 2025 Jul 15.
+              <br />
+              PMID: 40680754 Clinical Trial.
+            </p>
+          </li>
+          <li style={{ marginBottom: '12px' }}>
+            <a href="#" style={{ color: '#2563eb', textDecoration: 'none' }}>
+              Panobinostat plus bortezomib and dexamethasone versus placebo plus bortezomib and dexamethasone in patients with relapsed or relapsed and refractory multiple myeloma: a multicentre, randomised, double-blind phase 3 trial.
+            </a>
+            <p style={{ fontSize: '12px', margin: '2px 0 0 0', color: '#4a5568' }}>
+              San-Miguel JF, Hungria VT, Yoon SS, Beksac M, Dimopoulos MA, Elghandour A, Jedrzejczak WW, Günther A, Nakorn TN, Siritanaratkul N, Corradini P, Chuncharunee S, Lee JJ, Schlossman RL, Shelekhova T, Yong K, Tan D, Numbenjapon T, Cavenagh JD, Hou J, LeBlanc R, Nahi H, Qiu L, Salwender H, Pulini S, Moreau P, Warzocha K, White D, Bladé J, Chen W, de la Rubia J, Gimsing P, Lonial S, Kaufman JL, Ocio EM, Veskovski L, Sohn SK, Wang MC, Lee JH, Einsele H, Sopala M, Corrado C, Bengoudifa BR, Binlich F, Richardson PG.
+            </p>
+            <p style={{ fontSize: '12px', color: '#4D8055' }}>
+              Lancet Oncol. 2014 Oct;15(11):1195-206. doi: 10.1016/S1470-2045(14)70440-1. Epub 2014 Sep 18.
+              <br />
+              PMID: 25242045 Clinical Trial.
+            </p>
+          </li>
+          <li style={{ marginBottom: '12px' }}>
+            <a href="#" style={{ color: '#2563eb', textDecoration: 'none' }}>
+              Ibrutinib plus venetoclax in relapsed or refractory mantle cell lymphoma (SYMPATICO): a multicentre, randomised, double-blind, placebo-controlled, phase 3 study.
+            </a>
+            <p style={{ fontSize: '12px', margin: '2px 0 0 0', color: '#4a5568' }}>
+              Wang M, Jurczak W, Trněný M, Belada D, Wróbel T, Ghosh N, Keating MM, van Meerten T, Alvarez RF, von Keudell G, Thieblemont C, Peyrade F, Andre M, Hoffmann M, Szafer-Glusman E, Lin J, Dean JP, Neuenburg JK, Tam CS.
+            </p>
+            <p style={{ fontSize: '12px', color: '#4D8055' }}>
+              Lancet Oncol. 2025 Feb;26(2):200-213. doi: 10.1016/S1470-2045(24)00682-X.
+              <br />
+              PMID: 39914418 Clinical Trial.
+            </p>
+          </li>
+          <li style={{ marginBottom: '12px' }}>
+            <a href="#" style={{ color: '#2563eb', textDecoration: 'none' }}>
+              Pomalidomide, bortezomib, and dexamethasone for patients with relapsed or refractory multiple myeloma previously treated with lenalidomide (OPTIMISMM): a randomised, open-label, phase 3 trial.
+            </a>
+            <p style={{ fontSize: '12px', margin: '2px 0 0 0', color: '#4a5568' }}>
+              Richardson PG, Oriol A, Beksac M, Liberati AM, Galli M, Schjesvold F, Lindsay J, Weisel K, White D, Facon T, San Miguel J, Sunami K, O'Gorman P, Sonneveld P, Robak P, Semochkin S, Schey S, Yu X, Doerr T, Bensmaine A, Biyukov T, Peluso T, Zaki M, Anderson K, Dimopoulos M; OPTIMISMM trial investigators.
+            </p>
+            <p style={{ fontSize: '12px', color: '#4D8055' }}>
+              Lancet Oncol. 2019 Jun;20(6):781-794. doi: 10.1016/S1470-2045(19)30152-4. Epub 2019 May 13.
+              <br />
+              PMID: 31097405 Clinical Trial.
+            </p>
+          </li>
+          <li style={{ marginBottom: '12px' }}>
+            <a href="#" style={{ color: '#2563eb', textDecoration: 'none' }}>
+              Symptomatic progression-free survival as an emerging patient-centered endpoint in multiple myeloma: a secondary analysis of MagnetsiMM-3 trial data.
+            </a>
+            <p style={{ fontSize: '12px', margin: '2px 0 0 0', color: '#4a5568' }}>
+              Kortüm M, Theurich S, Farrell J, Jackson G, Cook G, Cappelleri JC, Ashman O, Neff-Baro S, Gauthier A, Jewiti-Rigondza K, Sidhom A, Chaudhary A, Scheid C.
+            </p>
+            <p style={{ fontSize: '12px', color: '#4D8055' }}>
+              BMC Cancer. 2025 Aug 8;25(1):1288. doi: 10.1186/s12885-025-14724-6.
+              <br />
+              PMID: 40781281 <span style={{ color: '#C05600' }}>Free PMC article.</span>
+            </p>
+          </li>
+        </ul>
+        <a href="#" style={{ fontSize: '12px', color: '#2563eb' }}>
+          See all similar articles
+        </a>
+      </div>
+    </div>
+  )
+},
+{
+  id: 4,
+  title: 'Redefining Cure in Multiple Myeloma: Are We Chasing a Moving Target?',
+  content: (
+    <div style={{
+      maxWidth: '900px',
+      margin: '0 auto',
+      padding: '16px',
+      backgroundColor: 'white',
+      fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+      color: '#333',
+      lineHeight: '1.5'
+    }}>
+      {/* 标题区域 */}
+      <h1 style={{
+        fontSize: '24px',
+        fontWeight: 'bold',
+        color: '#1a202c',
+        marginBottom: '16px',
+        lineHeight: '1.3'
+      }}>
+        Redefining Cure in Multiple Myeloma: Are We Chasing a Moving Target?
+      </h1>
+
+      {/* 作者信息 */}
+      <div style={{
+        fontSize: '14px',
+        marginBottom: '12px',
+        color: '#4a5568'
+      }}>
+        <p style={{ color: '#0071bc' }}>
+          Jacob Henry Kitundu <sup style={{ color: 'black', backgroundColor: '#f1f1f1', padding: '1px 4px', borderRadius: '2px' }}>1</sup> <sup style={{ color: 'black', backgroundColor: '#f1f1f1', padding: '1px 4px', borderRadius: '2px' }}>2</sup>
+        </p>
+      </div>
+
+      {/* 元数据信息 */}
+      <div style={{
+        fontSize: '12px',
+        marginBottom: '16px',
+        color: '#212121'
+      }}>
+        <p style={{ margin: '4px 0' }}>Affiliations + expand</p>
+        <p style={{ margin: '4px 0' }}>
+          PMID: 41324097 PMCID: PMC12657616 DOI: 
+          <span style={{ color: '#2563eb', cursor: 'pointer', marginLeft: '4px' }}>
+            10.1002/hsr2.71581
+          </span>
+        </p>
+      </div>
+
+      {/* 摘要部分 */}
+      <h2 style={{
+        fontSize: '18px',
+        fontWeight: 'bold',
+        color: '#1a202c',
+        marginBottom: '12px',
+        paddingBottom: '4px'
+      }}>
+        Abstract
+      </h2>
+
+      <div style={{ marginBottom: '20px', fontSize: '14px' }}>
+        <p style={{ marginBottom: '12px' }}>
+          <strong>Background and aims:</strong> Multiple myeloma (MM), a clonal plasma cell malignancy, remains incurable despite significant therapeutic advances, including novel immunotherapies like chimeric antigen receptor T-cell (CAR-T) therapy and bispecific antibodies. This perspective reevaluates the concept of "cure" in MM, challenging the traditional binary definition of complete disease eradication. The author proposes a dynamic, patient-centric model integrating sustained minimal residual disease (MRD) negativity, functional cure, and quality of life (QoL) to align clinical goals with biological realities.
+        </p>
+        
+        <p style={{ marginBottom: '12px' }}>
+          <strong>Methods:</strong> This perspective reviews current literature on MM pathophysiology, focusing on intratumoral heterogeneity and bone marrow microenvironment interactions as drivers of therapeutic resistance. It critiques existing cytotoxic and immunomodulatory paradigms and explores emerging strategies, including precision medicine, single-cell genomics, and artificial intelligence (AI)-driven risk stratification, to redefine therapeutic endpoints.
+        </p>
+        
+        <p style={{ marginBottom: '12px' }}>
+          <strong>Results:</strong> Novel immunotherapies achieve deep responses, with MRD negativity rates approaching 80% in some cohorts; however, relapse remains a significant challenge due to subclonal evolution and dormant MM clones. Current treatment paradigms fail to fully address these biological complexities, necessitating innovative approaches that combine therapies, target resistant clones, and incorporate patient-reported outcomes to balance efficacy with QoL.
+        </p>
+        
+        <p style={{ marginBottom: '12px' }}>
+          <strong>Conclusion:</strong> Reframing cure as a spectrum rather than an absolute state offers a more realistic framework for MM management. By leveraging precision medicine and integrating QoL considerations, clinicians and researchers can foster durable remissions and improve patient outcomes. This perspective advocates for a paradigm shift, urging the MM community to embrace biological complexity and redefine success in this evolving therapeutic landscape.
+        </p>
+      </div>
+
+      {/* 关键词 */}
+      <div style={{
+        fontSize: '14px',
+        marginBottom: '20px',
+        color: '#4a5568'
+      }}>
+        <span style={{ fontWeight: 'bold', marginRight: '4px' }}>Keywords:</span>
+        <span>
+          cure; immunotherapy; machine learning; minimal residual disease; multiple myeloma; precision medicine; proteasome inhibitors; quality of life; single-cell RNA-sequencing.
         </span>
       </div>
 
-      {/* 作者信息区域 */}
-      <div style={{ marginBottom: '32px', fontSize: '14px' }}>
-        <p style={{ marginBottom: '8px' }}>
-          By <span style={{ color: '#dc2626' }}>Shalini S. Lynch, PharmD</span>, University of California San Francisco School of Pharmacy
-        </p>
-        <p style={{ marginBottom: '8px' }}>
-          Reviewed By <span style={{ color: '#dc2626' }}>Eva M. Vivian, PharmD, MS, PhD</span>, University of Wisconsin School of Pharmacy
-        </p>
-        <p style={{ fontStyle: 'italic', color: '#718096' }}>
-          Reviewed/Revised Apr 2025
-        </p>
-      </div>
-
-      {/* 定义框 */}
-      <div style={{ 
-        backgroundColor: '#edf2f7', 
-        padding: '16px', 
-        marginBottom: '32px',
+      {/* 版权信息 */}
+      <div style={{
+        fontSize: '12px',
+        marginBottom: '20px',
+        color: '#666',
+        padding: '8px',
         borderRadius: '4px'
       }}>
-        <p style={{ lineHeight: '1.6' }}>
-          A medication error is any preventable event that may cause or lead to inappropriate medication use or patient harm while the medication is in the control of a health care professional, patient, or caregiver.
-        </p>
+        © 2025 The Author(s). Health Science Reports published by Wiley Periodicals LLC.
       </div>
 
-      {/* 介绍段落 */}
-      <p style={{ marginBottom: '16px', lineHeight: '1.6' }}>
-        A medication error may or may not result in an adverse drug reaction. Errors in prescribing are common, especially for certain patient populations. Older adults, reproductive-age women, and children are particularly at risk.
-      </p>
-
-      <p style={{ marginBottom: '16px', lineHeight: '1.6' }}>
-        Medication errors contribute to morbidity and mortality. Globally, the annual cost associated with medication errors is estimated to be more than 40 billion USD (see <span style={{ color: '#dc2626' }}>World Health Organization: Medication Without Harm</span>). In 2000, the United States Institute of Medicine published a report, To Err is Human: Building a Safer Health System, which revealed that there are more deaths from medication errors than workplace injury (1).
-      </p>
-
-      <p style={{ marginBottom: '16px', lineHeight: '1.6' }}>
-        Medication errors may involve:
-      </p>
-
-      {/* 药物错误可能涉及的问题列表 */}
-      <ul style={{ marginBottom: '32px', paddingLeft: '24px', lineHeight: '1.6' }}>
-        <li style={{ marginBottom: '8px' }}>Wrong choice of a medication or a prescription for the wrong dose, frequency, or duration</li>
-        <li style={{ marginBottom: '8px' }}>Errors in reading the prescription by the pharmacist so that the wrong medication or dose is dispensed</li>
-        <li style={{ marginBottom: '8px' }}>Errors in reading the label of the drug container by the caregiver so that the wrong medication or dose is given</li>
-        <li style={{ marginBottom: '8px' }}>Incorrect instructions to the patient</li>
-        <li style={{ marginBottom: '8px' }}>Incorrect administration by a clinician, caregiver, or patient</li>
-        <li style={{ marginBottom: '8px' }}>Incorrect storage by the pharmacist or patient, altering the medication's potency</li>
-        <li style={{ marginBottom: '8px' }}>Use of an outdated drug, altering the potency</li>
-        <li style={{ marginBottom: '8px' }}>Inaccurate transmission of prescription information between clinicians</li>
-      </ul>
-
-      {/* Unclear prescriptions 部分 */}
-      <div style={{ marginBottom: '32px' }}>
-        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '16px', color: '#1a202c' }}>
-          Unclear prescriptions
-        </h2>
-        <p style={{ marginBottom: '16px', lineHeight: '1.6' }}>
-          Digital prescriptions must be entered into the computer ordering system correctly, and handwritten prescriptions must be written as clearly as possible. The names of some drugs are similar and, if not written clearly, cause confusion. In the United States, <span style={{ color: '#dc2626' }}>The Joint Commission</span> provides guidelines for abbreviations used in prescriptions and medical records. For example, "qd" (once a day) may be confused with "qid" (4 times a day). Writing "once daily" is preferred.
-        </p>
-        <p style={{ marginBottom: '16px', lineHeight: '1.6' }}>
-          Electronically transmitted or computer-printed prescriptions can avoid problems with illegible handwriting or inappropriate abbreviations. Electronic prescribing systems that use check boxes or pull-down lists may help direct prescribers to suitable dosages but also may increase the risk of inadvertently selecting the wrong drug or dose.
-        </p>
-      </div>
-    </div>
-      </>
-    )
-  },
-  {
-    id: 6,
-    title: 'Overview of Cancer',
-    content: (
-      <div style={{ 
-        maxWidth: '900px', 
-        margin: '0 auto', 
-        padding: '32px', 
-        backgroundColor: 'white',
-        fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif'
-      }}>
-        {/* 标题和按钮区域 */}
-        <div style={{ 
-          display: 'flex', 
-          justifyContent: 'space-between', 
-          alignItems: 'flex-start',
-          marginBottom: '24px'
-        }}>
-          <h1 style={{ 
-            fontSize: '28px', 
-            fontWeight: 'bold', 
-            color: '#1a202c', 
-            marginBottom: '16px',
-            lineHeight: '1.3'
-          }}>
-            Overview of Cancer
-          </h1>
-          <button style={{ 
-            backgroundColor: '#b71c1c', 
-            color: 'white', 
-            padding: '8px 24px', 
-            borderRadius: '4px', 
-            fontWeight: '600', 
-            display: 'flex', 
-            alignItems: 'center',
-            justifyContent: 'center',
-            border: 'none',
-            cursor: 'pointer'
-          }}>
-            <i className="fas fa-clipboard-list" style={{ marginRight: '8px' }}></i>VIEW PATIENT EDUCATION
-          </button>
-        </div>
-
-        {/* 功能图标区域 */}
-        <div style={{ 
-          display: 'flex', 
-          marginBottom: '24px'
-        }}>
-          <span style={{ 
-            cursor: 'pointer', 
-            color: '#4a5568', 
-            marginRight: '16px'
-          }}>
-            <i className="fas fa-print" style={{ fontSize: '18px' }}></i>
-          </span>
-          <span style={{ 
-            cursor: 'pointer', 
-            color: '#4a5568', 
-            marginRight: '16px'
-          }}>
-            <i className="fas fa-volume-up" style={{ fontSize: '18px' }}></i>
-          </span>
-          <span style={{ 
-            cursor: 'pointer', 
-            color: '#4a5568'
-          }}>
-            <i className="fas fa-qrcode" style={{ fontSize: '18px' }}></i>
-          </span>
-        </div>
-
-        {/* 作者信息区域 */}
-        <div style={{ marginBottom: '32px', fontSize: '14px' }}>
-          <p style={{ marginBottom: '8px' }}>
-            By <span style={{ color: '#dc2626' }}>Robert Peter Gale, MD, PhD, DSC(hc)</span>, Imperial College London
-          </p>
-          <p style={{ marginBottom: '8px' }}>
-            Reviewed By <span style={{ color: '#dc2626' }}>Ashkan Emadi, MD, PhD</span>, West Virginia University School of Medicine, Robert C. Byrd Health Sciences Center
-          </p>
-          <p style={{ fontStyle: 'italic', color: '#718096' }}>
-            Reviewed/Revised Sept 2024
-          </p>
-        </div>
-
-        {/* 正文内容 */}
-        <div style={{ lineHeight: '1.6', marginBottom: '32px' }}>
-          <p>
-            Cancer is an unregulated proliferation of cells. Its prominent properties are
-          </p>
-          <ul style={{ paddingLeft: '24px', marginBottom: '16px' }}>
-            <li>A lack of cell differentiation</li>
-            <li>Local invasion of adjoining tissue</li>
-            <li>Metastasis, which is spread to distant sites through the bloodstream or the lymphatic system (often)</li>
-          </ul>
-          <p>
-            The <span style={{ color: '#dc2626' }}>immune system</span> may play a role in eliminating early cancers or premalignant cells. This concept is termed immune surveillance. Patients with congenital or acquired immunodeficiency have an increased cancer risk, particularly cancers associated with viral infection such as lymphomas and Kaposi sarcoma <span style={{ color: '#dc2626' }}>(1, 2)</span>.
-          </p>
-          <p>
-            Many cancers are potentially curable, particularly if detected at an early stage, and long-term remission is often possible in those detected at later stages. There is controversy whether cancers detected at an early stage, such as breast cancers detected by screening mammography or prostate cancers detected by screening prostate-specific antigen (PSA) testing, will progress during a patient's lifetime. However, for many cancers early detection increases the potential for cure.
-          </p>
-          <p>
-            When cure is not possible, as in many cases of advanced cancer, judicious treatment with <span style={{ color: '#dc2626' }}>surgery</span>, <span style={{ color: '#dc2626' }}>chemotherapy</span>, <span style={{ color: '#dc2626' }}>immune therapy</span>, and/or <span style={{ color: '#dc2626' }}>radiation therapy</span> may improve quality of life and prolong survival. However, in other patients, particularly in patients with poor functional status and in those with comorbid conditions, such treatment may be poorly tolerated, and <span style={{ color: '#dc2626' }}>palliative care</span> may be appropriate.
-          </p>
-        </div>
-
-        {/* References 部分 */}
-        <div style={{ marginTop: '40px' }}>
-          <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '16px' }}>References</h3>
-          <p style={{ fontSize: '14px', lineHeight: '1.6' }}>
-            1. Ribatti D. The concept of immune surveillance against tumors. The first theories. Oncotarget 2017;8(4):7175-7180. doi:10.18632/oncotarget.12739
-          </p>
-          <p style={{ fontSize: '14px', lineHeight: '1.6' }}>
-            2. Swann JB, Smyth MJ. Immune surveillance of tumors. J Clin Invest 2007;117(5):1137-1146. doi:10.1172/JCI31405
-          </p>
-        </div>
-      </div>
-    )
-  },
-  {
-    id: 7,
-    title: 'Elevated Factor VIII, IX, and XI Levels',
-    content: (
-      <div style={{ 
-      maxWidth: '900px', 
-      margin: '0 auto', 
-      padding: '32px', 
-      backgroundColor: 'white',
-      fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif'
-    }}>
-      {/* 标题和按钮区域 */}
-      <div style={{ 
-        display: 'flex', 
-        justifyContent: 'space-between', 
-        alignItems: 'flex-start',
+      {/* PubMed 声明链接 */}
+      <div style={{
+        fontSize: '14px',
         marginBottom: '24px'
       }}>
-        <h1 style={{ 
-          fontSize: '28px', 
-          fontWeight: 'bold', 
-          color: '#1a202c', 
-          marginBottom: '16px',
-          lineHeight: '1.3'
-        }}>
-          Elevated Factor VIII, IX, and XI Levels
-        </h1>
-        <button style={{ 
-          backgroundColor: '#b71c1c', 
-          color: 'white', 
-          padding: '8px 24px', 
-          borderRadius: '4px', 
-          fontWeight: '600', 
-          display: 'flex', 
-          alignItems: 'center',
-          justifyContent: 'center',
-          border: 'none',
-          cursor: 'pointer'
-        }}>
-          <i className="fas fa-clipboard-list" style={{ marginRight: '8px' }}></i>VIEW PATIENT EDUCATION
-        </button>
+        <a href="#" style={{ color: '#2563eb', textDecoration: 'none' }}>
+          PubMed Disclaimer
+        </a>
       </div>
 
-      {/* 功能图标区域 */}
-      <div style={{ 
-        display: 'flex', 
+      {/* 利益冲突声明 */}
+      <h2 style={{
+        fontSize: '18px',
+        fontWeight: 'bold',
+        color: '#1a202c',
+        marginBottom: '12px',
+        paddingBottom: '4px',
+      }}>
+        Conflict of interest statement
+      </h2>
+      <div style={{ marginBottom: '24px', fontSize: '14px' }}>
+        <p>The author declares no conflicts of interest.</p>
+      </div>
+
+      {/* 相似文章 */}
+      <h2 style={{
+        fontSize: '18px',
+        fontWeight: 'bold',
+        color: '#1a202c',
+        marginBottom: '12px',
+        paddingBottom: '4px'
+      }}>
+        Similar articles
+      </h2>
+      
+      <div style={{
+        fontSize: '14px',
         marginBottom: '24px'
       }}>
-        <span style={{ 
-          cursor: 'pointer', 
-          color: '#4a5568', 
-          marginRight: '16px'
-        }}>
-          <i className="fas fa-print" style={{ fontSize: '18px' }}></i>
-        </span>
-        <span style={{ 
-          cursor: 'pointer', 
-          color: '#4a5568', 
-          marginRight: '16px'
-        }}>
-          <i className="fas fa-volume-up" style={{ fontSize: '18px' }}></i>
-        </span>
-        <span style={{ 
-          cursor: 'pointer', 
-          color: '#4a5568'
-        }}>
-          <i className="fas fa-qrcode" style={{ fontSize: '18px' }}></i>
-        </span>
-      </div>
-
-      {/* 作者信息区域 */}
-      <div style={{ marginBottom: '32px', fontSize: '14px' }}>
-        <p style={{ marginBottom: '8px' }}>
-          By <span style={{ color: '#dc2626' }}>Michael B. Streiff, MD</span>, Johns Hopkins University School of Medicine
-        </p>
-        <p style={{ marginBottom: '8px' }}>
-          Reviewed By <span style={{ color: '#dc2626' }}>Ashkan Emadi, MD, PhD</span>, West Virginia University School of Medicine, Robert C. Byrd Health Sciences Center
-        </p>
-        <p style={{ fontStyle: 'italic', color: '#718096' }}>
-          Reviewed/Revised Jul 2025
-        </p>
-      </div>
-
-      {/* 摘要区域 */}
-      <div style={{ 
-        backgroundColor: '#eef5f9', 
-        padding: '16px', 
-        marginBottom: '32px',
-        borderRadius: '4px',
-        borderLeft: '4px solid #0f4c81'
-      }}>
-        <p style={{ lineHeight: '1.6', color: '#1a202c' }}>
-          Increased levels of factors VIII, IX, and XI are risk factors for venous thromboembolism (VTE). While these levels are genetically determined, elevated levels of factor VIII can occur in chronic inflammation and other systemic disorders. Treatment is with anticoagulation for VTE and, in the case of elevated factor VIII, specific treatment for underlying disorders.
-        </p>
-      </div>
-
-      {/* 导航链接区域 */}
-      <div style={{ 
-        marginBottom: '32px', 
-        paddingBottom: '8px', 
-        borderBottom: '1px solid #e2e8f0'
-      }}>
-        <a href="#diagnosis" style={{ color: '#dc2626', fontWeight: 'bold', marginRight: '8px' }}>Diagnosis</a> | 
-        <a href="#treatment" style={{ color: '#dc2626', fontWeight: 'bold', marginLeft: '8px' }}>Treatment</a>
-      </div>
-
-      {/* 正文内容 */}
-      <div style={{ lineHeight: '1.6', marginBottom: '32px' }}>
-        <p>
-          Factors VIII, IX, and XI are clotting proteins made primarily in the liver. Factor VIII circulates in an inactive form bound to von Willebrand factor (VWF) until blood vessel injury activates it and separates them. Free Factor VIII then interacts with factor IX to facilitate clotting.
-        </p>
-        <p>
-          Elevated factor VIII levels were first recognized to be a risk factor for venous thromboembolism (VTE) in the Leiden Thrombophilia Study, a case control study of patients with a first episode of VTE without cancer, and age- and sex-matched controls. Factor VIII activity &gt; 150 IUL was associated with a nearly 5-fold increased risk of VTE <sup>(1)</sup>. Elevated factor VIII levels have also been identified as a risk factor for recurrent VTE <sup>(2)</sup>.
-        </p>
-        <p>
-          Elevated factor IX and factor XI antigen levels are also associated with an increased risk of VTE <sup>(3, 4)</sup>. However, the Longitudinal Investigation of Thromboembolism Etiology study also found that factor XI, but not factor IX, was associated with increased VTE risk when adjusted for age, sex, race, study, BMI (body mass index), and diabetes <sup>(5)</sup>.
-        </p>
-        <p>
-          Elevated von Willebrand factor levels have also been associated with an increased risk of VTE <sup>(6)</sup>.
-        </p>
-      </div>
-
-      {/* General references */}
-      <div style={{ marginBottom: '40px' }}>
-        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '16px' }}>General references</h3>
-        <ol style={{ fontSize: '14px', lineHeight: '1.6' }}>
-          <li>
-            van der Meer FJ, Koster T, Vandenbroucke JP, Briet E, Rosendaal FR. The Leiden Thrombophilia Study (LETS). <em>Thromb Haemost.</em> 1997;78(1):631–635.
+        <ul style={{ listStyleType: 'none', paddingLeft: '0', margin: 0 }}>
+          <li style={{ marginBottom: '16px', paddingBottom: '16px'}}>
+            <a href="#" style={{ color: '#2563eb', textDecoration: 'none', fontWeight: '500' }}>
+              Next-generation immunotherapy in relapsed/refractory multiple myeloma: Strategies to achieve sustained MRD negativity.
+            </a>
+            <p style={{ fontSize: '13px', margin: '4px 0 0 0', color: '#4a5568' }}>
+              Zhu L, Nawaz MA, Zuo Y, Zeng P.
+            </p>
+            <p style={{ fontSize: '12px', color: '#4D8055', margin: '2px 0 0 0' }}>
+              Crit Rev Oncol Hematol. 2025 Oct;214:104913. doi: 10.1016/j.critrevonc.2025.104913. Epub 2025 Aug 21.
+              <br />
+              PMID: 40848821 <strong>Review.</strong>
+            </p>
           </li>
-          <li>
-            Kylie PA, Minar E, Hirsch M, et al. High plasma levels of factor VIII and the risk of recurrent venous thromboembolism. <em>N Engl J Med.</em> 2000; 343(7):457-462. doi: 10.1056/NEJM200008173430702
+          
+          <li style={{ marginBottom: '16px', paddingBottom: '16px' }}>
+            <a href="#" style={{ color: '#2563eb', textDecoration: 'none', fontWeight: '500' }}>
+              Redefining multiple myeloma treatment: Advances, challenges, and future directions in immunotherapy.
+            </a>
+            <p style={{ fontSize: '13px', margin: '4px 0 0 0', color: '#4a5568' }}>
+              Fu C, Zhai Y, Yan L, Jin S, Shang J, Shi X, Wu D.
+            </p>
+            <p style={{ fontSize: '12px', color: '#4D8055', margin: '2px 0 0 0' }}>
+              Chin Med J (Engl). 2025 Aug 8;138(19):2399-410. doi: 10.1097/CM9.0000000000003655. Online ahead of print.
+              <br />
+              PMID: 40784898 <span style={{ color: '#C05600' }}>Free PMC article.</span>
+            </p>
           </li>
-          <li>
-            van Hylckama Vlieg A, van der Linden IK, Bertina RM, Rosendaal FR. High levels of factor IX increase the risk of venous thrombosis. <em>Blood.</em> 2000; 95(12):3678-3682.
+          
+          <li style={{ marginBottom: '16px', paddingBottom: '16px' }}>
+            <a href="#" style={{ color: '#2563eb', textDecoration: 'none', fontWeight: '500' }}>
+              Role of Immunotherapy in Targeting the Bone Marrow Microenvironment in Multiple Myeloma: An Evolving Therapeutic Strategy.
+            </a>
+            <p style={{ fontSize: '13px', margin: '4px 0 0 0', color: '#4a5568' }}>
+              Chung C.
+            </p>
+            <p style={{ fontSize: '12px', color: '#4D8055', margin: '2px 0 0 0' }}>
+              Pharmacotherapy. 2017 Jan;37(1):129-143. doi: 10.1002/phar.1871. Epub 2017 Jan 6.
+              <br />
+              PMID: 27870103 <strong>Review.</strong>
+            </p>
           </li>
-          <li>
-            Meijers JC, Tekelenburg WL, Bouma BN, Bertina RM, Rosendaal FR. High levels of coagulation factor XI as a risk factor for venous thrombosis. <em>N Engl J Med.</em> 2000; 342(10):696-701. doi: 10.1056/NEJM200003093421004
+          
+          <li style={{ marginBottom: '16px', paddingBottom: '16px' }}>
+            <a href="#" style={{ color: '#2563eb', textDecoration: 'none', fontWeight: '500' }}>
+              Functional cure and long-term survival in multiple myeloma: how to challenge the previously impossible.
+            </a>
+            <p style={{ fontSize: '13px', margin: '4px 0 0 0', color: '#4a5568' }}>
+              Engelhardt M, Kortüm KM, Goldschmidt H, Merz M.
+            </p>
+            <p style={{ fontSize: '12px', color: '#4D8055', margin: '2px 0 0 0' }}>
+              Haematologica. 2024 Aug 1;109(8):2420-2435. doi: 10.3324/haematol.2023.283058.
+              <br />
+              PMID: 38356448 <span style={{ color: '#C05600' }}>Free PMC article.</span> <strong>Review.</strong>
+            </p>
           </li>
-          <li>
-            Cushman M, O'Meara ES, Folsom AR, et al. Coagulation factors IX through XII and the risk of future venous thrombosis: the Longitudinal Investigation of Thromboembolism Etiology. <em>Blood.</em> 2009; 114(14):2878-2883. doi: 10.1182/blood-2009-05-219915
+          
+          <li style={{ marginBottom: '16px', paddingBottom: '16px' }}>
+            <a href="#" style={{ color: '#2563eb', textDecoration: 'none', fontWeight: '500' }}>
+              Current landscape and future prospects of bispecific antibodies in multiple myeloma.
+            </a>
+            <p style={{ fontSize: '13px', margin: '4px 0 0 0', color: '#4a5568' }}>
+              Seeburun S.
+            </p>
+            <p style={{ fontSize: '12px', color: '#4D8055', margin: '2px 0 0 0' }}>
+              J Egypt Natl Canc Inst. 2025 Dec 29;37(1):80. doi: 10.1186/s43046-025-00336-5.
+              <br />
+              PMID: 41457136 <strong>Review.</strong>
+            </p>
           </li>
-          <li>
-            Edvardsen MS, Hindberg K, Hansen ES, et al. Plasma levels of von Willebrand factor and future risk of incident venous thromboembolism. <em>Blood Adv.</em> 2021;5(1):224-232. doi:10.1182/bloodadvances.2020003135
-          </li>
-        </ol>
-      </div>
-
-      {/* Diagnosis of Elevated Factor VIII, IX, and XI Levels */}
-      <div id="diagnosis" style={{ marginBottom: '32px' }}>
-        <div style={{ 
-          backgroundColor: '#0f4c81', 
-          color: 'white', 
-          padding: '12px 16px', 
-          marginBottom: '16px'
-        }}>
-          <h2 style={{ fontSize: '20px', fontWeight: 'bold' }}>Diagnosis of Elevated Factor VIII, IX, and XI Levels</h2>
-        </div>
-        <ul style={{ paddingLeft: '24px', marginBottom: '24px', lineHeight: '1.6' }}>
-          <li>Measurement of factor VIII, IX, or XI</li>
         </ul>
-        <p style={{ lineHeight: '1.6' }}>
-          Levels of factor VIII, IX, and XI antigen and activity can be directly measured.
-        </p>
-        <p style={{ lineHeight: '1.6', marginBottom: '24px' }}>
-          Factor VIII, IX and XI have been associated with an increased risk of venous thromboembolism <sup>(1, 2)</sup>. When measuring factor activity levels, it is important to do testing in the absence of anticoagulants. Warfarin affects vitamin K dependent factors II, VII, IX and X activity and antigen levels. Direct oral anticoagulants can result in the underestimation of factor activity levels <sup>(3)</sup>. Factor antigen levels are not affected by direct oral anticoagulants.
-        </p>
         
-        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '16px' }}>Diagnosis references</h3>
-        <ol style={{ fontSize: '14px', lineHeight: '1.6' }}>
-          <li>
-            Lowe G, Wu O, van Hylckama Vlieg A, Folsom A, Rosendaal F, Woodward M. Plasma levels of coagulation factors VIII and IX and risk of venous thromboembolism: Systematic review and meta-analysis. <em>Thromb Res.</em> 2023;229:31-39. doi:10.1016/j.thromres.2023.06.026
-          </li>
-          <li>
-            Meijers JC, Tekelenburg WL, Bouma BN, Bertina RM, Rosendaal FR. High levels of coagulation factor XI as a risk factor for venous thrombosis. <em>N Engl J Med.</em> 2000; 342(10):696-701. doi:10.1056/NEJM200003093421004
-          </li>
-          <li>
-            Douxfils J, Ageno W, Samama CM, et al. Laboratory testing in patients treated with direct oral anticoagulants: a practical guide for clinicians. <em>J Thromb Haemost.</em> 2018;16(2):209-219. doi:10.1111/jth.13912
-          </li>
-        </ol>
-      </div>
-
-      {/* Treatment of Elevated Factor VIII, IX, and XI Levels */}
-      <div id="treatment" style={{ marginBottom: '32px' }}>
-        <div style={{ 
-          backgroundColor: '#0f4c81', 
-          color: 'white', 
-          padding: '12px 16px', 
-          marginBottom: '16px'
-        }}>
-          <h2 style={{ fontSize: '20px', fontWeight: 'bold' }}>Treatment of Elevated Factor VIII, IX, and XI Levels</h2>
-        </div>
-        <ul style={{ paddingLeft: '24px', marginBottom: '24px', lineHeight: '1.6' }}>
-          <li>Anticoagulation</li>
-        </ul>
-        <p style={{ lineHeight: '1.6' }}>
-          Direct oral anticoagulants and vitamin K antagonists are effective for treatment of patients with elevated factor VIII, IX and XI levels with a venous thromboembolism <sup>(1)</sup>.
-        </p>
-        
-        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '16px' }}>Treatment reference</h3>
-        <ol style={{ fontSize: '14px', lineHeight: '1.6' }}>
-          <li>
-            Campello E, Spiezia L, Simion C, et al. Direct Oral Anticoagulants in Patients With Inherited Thrombophilia and Venous Thromboembolism: A Prospective Cohort Study. <em>J Am Heart Assoc.</em> 2020;9(23):e018917. doi:10.1161/JAHA.120.018917
-          </li>
-        </ol>
+        <a href="#" style={{ fontSize: '14px', color: '#2563eb', textDecoration: 'none', fontWeight: '500' }}>
+          See all similar articles
+        </a>
       </div>
     </div>
-    )
-  },
-
+  )
+}
 ];
